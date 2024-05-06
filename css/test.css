@@ -1,4 +1,4 @@
-Reset CSS
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -28,30 +28,24 @@ body {
     align-items: center;
     justify-content: space-evenly;
     position: relative;
-    top: 12px;
 }
 
-.frame-1{
+.frame-1,
+.frame-2 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    left: 14%;
-}
-.frame-2 {
-    display: flex;
-    align-items: center;
-    position: relative;
-    left: 10%;
-
+    margin: 0 auto;
+    max-width: 1024px; /* Adjust as needed */
+    padding: 0 20px; /* Add padding for better readability on larger screens */
 }
 
 .text-wrapper {
     color: var(--text, #fafafa);
     font-size: 14px;
     line-height: 18px;
-    position: relative;
 }
 
 .shop-now {
@@ -61,7 +55,6 @@ body {
     text-decoration: underline;
     cursor: pointer;
     margin-left: 8px;
-    position: relative;
 }
 
 .english {
@@ -77,16 +70,16 @@ body {
 /* Navigation Bar */
 .header-nabar {
     position: relative;
-    top: 48px; 
+    top: 48px; /* height of .top-header */
     width: 100%;  
     display: flex;
     justify-content: space-evenly;
-    align-items: center;;
+    align-items: center;
 }
 
 .header-menu {
     display: flex;
-    gap: 190px;
+    gap: 30px;
     align-items: center;
     justify-content: flex-start;
 }
@@ -100,15 +93,12 @@ body {
 .exclusive {
     color: var(--button, #000000);
     font-size: 24px;
-    position: absolute;
-    top: 0;
-    left: 0;
     font-weight: bold;
 }
 
 .header__menu-link {
     display: flex;
-    gap: 48px;
+    gap: 20px;
     align-items: center;
     justify-content: flex-start;
 }
@@ -119,14 +109,12 @@ body {
 .sign-up {
     color: var(--button, #000000);
     font-size: 16px;
-    position: relative;
 }
-
 
 /* Search Box */
 .header-searh {
     display: flex;
-    gap: 24px;
+    gap: 20px;
     align-items: center;
     justify-content: flex-start;
 }
@@ -140,6 +128,7 @@ body {
     font-size: 12px;
     align-items: center;
 }
+
 .header-searh__input {
     width: 100%;
     padding: 7px 12px; 
@@ -154,10 +143,7 @@ body {
     width: 24px;
     height: 24px;
 }
-.header-searh__box{
-    display: flex;
-    align-items: center;
-}
+
 /* Icon Bar */
 .Header-nabar__icon {
     display: flex;
@@ -176,42 +162,40 @@ body {
     width: 100%;
     height: 100%;
 }
-.header-line{
+
+.header-line {
     border-style: solid;
     border-color: var(--button, #000000);
     border-width: 0.03125rem 0 0 0;
-    opacity: 0.30000001192092896;
+    opacity: 0.3;
     height: 0rem;
     position: relative;
-    top: 62px;;
+    top: 62px;
 }
-/* Responsive Design */
-@media only screen and (max-width: 770px) {
-    .main{
-        width: max-content;
-    }
-    .header-nabar {
-        top: 60px;
-    }
 
+/* Media Queries for Responsive Design */
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .frame-1,
+    .frame-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .header-menu {
-        gap: 70px;
-    }
-
-    .logo {
-        width: 90px;
-    }
-    .header__menu-link{
-        gap: 24px;
-    }
-
-    .search-component-set {
-        padding: 7px 10px;
+        gap: 10px;
     }
 }
-@media only screen and (min-width: 700px) and (max-width:800px) {
-    .main {
-        width: 100%; 
-        max-width: none; 
+
+/* For screens smaller than 576px */
+@media only screen and (max-width: 576px) {
+    .frame {
+        flex-direction: column;
+    }
+    .header-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
     }
 }
