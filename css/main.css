@@ -49,6 +49,8 @@ body {
     color: var(--text, #fafafa);
     font-size: 14px;
     line-height: 18px;
+    position: relative;
+    left: 50%;
 }
 
 .shop-now {
@@ -58,6 +60,8 @@ body {
     text-decoration: underline;
     cursor: pointer;
     margin-left: 8px;
+    position: relative;
+    left: 95%;
 }
 
 .english {
