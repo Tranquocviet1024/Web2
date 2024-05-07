@@ -1,0 +1,217 @@
+Reset CSS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    position: relative;
+}
+
+.top-header {
+    background: var(--button, #000000);
+    height: 48px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 12px;
+}
+
+.frame-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    left: 14%;
+}
+.frame-2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 10%;
+
+}
+
+.text-wrapper {
+    color: var(--text, #fafafa);
+    font-size: 14px;
+    line-height: 18px;
+    position: relative;
+}
+
+.shop-now {
+    color: var(--text, #fafafa);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 8px;
+    position: relative;
+}
+
+.english {
+    color: var(--text, #fafafa);
+}
+
+.drop-down {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+.header-nabar {
+    position: relative;
+    top: 48px; 
+    width: 100%;  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;;
+}
+
+.header-menu {
+    display: flex;
+    gap: 190px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 118px;
+    height: 24px;
+    position: relative;
+}
+
+.exclusive {
+    color: var(--button, #000000);
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+}
+
+.header__menu-link {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home,
+.contact,
+.about,
+.sign-up {
+    color: var(--button, #000000);
+    font-size: 16px;
+    position: relative;
+}
+
+
+/* Search Box */
+.header-searh {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search-component-set {
+    background: rgb(185, 179, 179);
+    border-radius: 4px;
+    padding: 7px 12px 7px 20px;
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    align-items: center;
+}
+.header-searh__input {
+    width: 100%;
+    padding: 7px 12px; 
+    background: rgb(185, 179, 179);
+    border-radius: 4px;
+    border: none;
+    font-size: 12px; 
+    color: var(--text2, #000000);
+}
+
+.header-searh__glass {
+    width: 24px;
+    height: 24px;
+}
+.header-searh__box{
+    display: flex;
+    align-items: center;
+}
+/* Icon Bar */
+.Header-nabar__icon {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.Wishlist,
+.Cart-1-with-buy {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.ShoppingCard {
+    width: 100%;
+    height: 100%;
+}
+.header-line{
+    border-style: solid;
+    border-color: var(--button, #000000);
+    border-width: 0.03125rem 0 0 0;
+    opacity: 0.30000001192092896;
+    height: 0rem;
+    position: relative;
+    top: 62px;;
+}
+/* Responsive Design */
+@media only screen and (max-width: 770px) {
+    .main{
+        width: max-content;
+    }
+    .header-nabar {
+        top: 60px;
+    }
+
+    .header-menu {
+        gap: 70px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+    .header__menu-link{
+        gap: 24px;
+    }
+
+    .search-component-set {
+        padding: 7px 10px;
+    }
+}
+@media only screen and (min-width: 700px) and (max-width:800px) {
+    .main {
+        width: 100%; 
+        max-width: none; 
+    }
+}
