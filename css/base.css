@@ -17,8 +17,6 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--text);
-
-    font-family: Arial, sans-serif;;
 }
 .gird{
     width: 1200px;

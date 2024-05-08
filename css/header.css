@@ -208,6 +208,7 @@ body {
     height: 0rem;
     position: relative;
     top: 62px;;
+    margin-bottom:60px ;
 }
 /* Responsive Design */
 @media only screen and (max-width: 740px) {
