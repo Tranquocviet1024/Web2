@@ -233,9 +233,10 @@ body {
         padding: 7px 10px;
     } */
 }
-@media only screen and (min-width: 740px) and (max-width:1048px) {
+@media only screen and (min-width: 741px) and (max-width:1048px) {
     .main {
         width: max-content; 
+        /* width: 100%; */
         /* max-width: none;  */
     }
 }
