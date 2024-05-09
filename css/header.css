@@ -5,6 +5,10 @@ Reset CSS
     box-sizing: border-box;
 }
 
+.main{
+    position: relative;
+}
+
 body {
     font-family: 'Poppins';
 }
@@ -241,3 +245,4 @@ body {
         /* max-width: none;  */
     }
 }
+
