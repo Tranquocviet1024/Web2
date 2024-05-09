@@ -95,7 +95,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0 40px 0 20px;
+    padding: 0 40px 0 40px;
 }
 
 .header-menu {
@@ -215,10 +215,14 @@ body {
     margin-bottom:60px ;
 }
 /* Responsive Design */
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 815px) {
     .main{
         width: max-content;
+        /* width: 100%; */
+        /* max-width: none;  */
     }
+
+    
     /* .header-nabar {
         top: 60px;
     }
@@ -238,11 +242,27 @@ body {
         padding: 7px 10px;
     } */
 }
-@media only screen and (min-width: 741px) and (max-width:1048px) {
+@media only screen and (min-width: 816px) and (max-width:1048px) {
     .main {
-        width: max-content; 
-        /* width: 100%; */
-        /* max-width: none;  */
+        /* width: max-content;  */
+        width: 100%;
+        max-width: none; 
     }
+<<<<<<< Updated upstream
 }
 
+=======
+
+    .footer-item-container_inclu_5{
+        width: 1170px;
+        justify-content: space-evenly;
+        padding: 0 100px;
+    
+    }
+
+    .header-nabar {
+        padding: 0 70px 0 50px;
+    }
+    
+}
+>>>>>>> Stashed changes
