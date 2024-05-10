@@ -35,3 +35,10 @@ body{
     font-family: Poppins;
     src: url('../font/Poppins-Medium.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: Inter;
+    src: url('../font/Inter-Medium.ttf') format('truetype');
+}
+
+
