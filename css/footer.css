@@ -3,24 +3,15 @@
 
 
 .footer__container{
-    /* width: 1440px; */
     width: 100%;
-
-    /* height: auto; */
-    /* height: ; */
-    /* max-width: none; */
     padding: 80px 0px 84px 0px;
     background-color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 5804px;
-    /* top: 500px; */
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* margin-top: 140px; */
+    margin:80px 0 0 0;
+    top:1509px;
     flex-wrap: wrap;
     
 }
