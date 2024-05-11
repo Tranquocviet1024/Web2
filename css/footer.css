@@ -4,18 +4,16 @@
 
 .footer__container{
     /* width: 1440px; */
-    /* width: max-content; */
+    width: 100%;
     /* height: auto; */
-    height: max-content;
+    /* height: ; */
     /* max-width: none; */
     padding: 80px 0px 84px 0px;
     background-color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    right: 0;
-    left: 0;
+    position: relative;
     top: 5804px;
     /* top: 500px; */
     bottom: 0;

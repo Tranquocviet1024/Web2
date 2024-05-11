@@ -27,8 +27,8 @@ body {
     width: 100%;
     height: 48px;
     top: 0;
-    left: 0;
-    right: 0;
+    /* left: 0;
+    right: 0; */
 }
 
 .frame {
@@ -101,8 +101,8 @@ body {
 
 /* Navigation Bar */
 .header-nabar {
-    position: fixed;
-    z-index: 1;
+    position: relative;
+    z-index: 0;
     top: 48px; 
     width: 100%;  
     height: 48px;
@@ -226,10 +226,10 @@ body {
     border-width: 0.03125rem 0 0 0;
     opacity: 0.30000001192092896;
     height: 0rem;
-    position: fixed;
+    position: relative;
     left: 0;
     right: 0;
-    top: 138px;
+    top: 47px;
     /* margin-bottom:60px ; */
 }
 /* Responsive Design */
