@@ -15,7 +15,7 @@
 }
 
 .list-and-hot-item__container{
-    /* width: 1330px; */
+    width: 1330px;
     width: 100%;
     position: absolute;
     /* justify-content: space-around; */
@@ -29,7 +29,7 @@
     position: absolute;
     /* padding-left: 100px; */
     top: -15px;
-    left: 135px;
+    left: 165px;
 }
 
 .set-item-classification{
@@ -238,24 +238,562 @@
                             /* today */
 
 
-.flashsales-today{
+.flashsales-today-container{
+    width: 1308px;
+    height: 493px;
+    top: 666px;
+    left: 182px;
+    gap: 40px;
 
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .flashsales-today__heading{
+    width: 1170px;
+    height: 103px;
+    gap: 470px;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    
 }
 
 .flashsales-time-container{
+    width: 600px;
+    height: 103px;
+    gap: 87px;
+    opacity: 0px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
 
 }
 
 .flashsales-today{
+    width: 211px;
+    height: 103px;
+    gap: 24px;
+    opacity: 0px;
+    
+    display: flex;
+    flex-direction: column;
 
 }
 
 .heading__topic{
+    width: 100px;
+    height: 40px;
+    gap: 16px;
+    opacity: 0px;
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+}
 
+.topic-thing{
+    width: 20px;
+    height: 40px;
+    gap: 0px;
+    border-radius: 4px;
+    opacity: 0px;
+    background: #DB4444;    
+}
+
+.topic-today{
+    width: 64px;
+    height: 20px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    color: #DB4444;    
+}
+
+.heading__flashsales{
+    width: 211px;
+    height: 48px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Inter';
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #000000;
+
+        
+}
+
+.flashsales-time{
+    width: 302px;
+    height: 50px;
+    gap: 0px;
+    opacity: 0px;
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 5px;
+    
+
+    
+}
+
+.flashsales-time__days{
+    width: 46px;
+    height: 50px;
+    gap: 4px;
+    opacity: 0px;
+    
 }
 
 
+
+.flashsales__days{
+    width: 31px;
+    height: 18px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+        
+}
+
+.flashsales-set_days{
+    width: 46px;
+    height: 28px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-align: left;
+        
+}
+.twodots{
+    width: 4px;
+    height: 16px;
+    top: 20px;
+    /* left: 63px; */
+    opacity: 0px;
+    color: #DB4444;
+    position: relative;
+    font-size: 25px;
+    display: flex;
+    
+}
+
+.flashsales-time__hours{
+    width: 42px;
+    height: 50px;
+    left: 84px;
+    gap: 4px;
+    opacity: 0px;
+    
+}
+
+.flashsales__hours{
+    width: 35px;
+    height: 18px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+        
+}
+
+
+
+.flashsales-set_hours{
+    width: 43px;
+    height: 30px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-align: left;
+        
+}
+.flashsales-time__minutes{
+    width: 49px;
+    height: 50px;
+    left: 164px;
+    gap: 4px;
+    opacity: 0px;
+    
+}
+
+.flashsales__minutes{
+    width: 49px;
+    height: 18px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+        
+}
+
+.flashsales-set_minutes{
+    width: 39px;
+    height: 28px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-align: left;
+        
+}
+
+.flashsales-time__seconds{
+    width: 51px;
+    height: 50px;
+    left: 251px;
+    gap: 4px;
+    opacity: 0px;
+    
+}
+
+.flashsales__seconds{
+    width: 52px;
+    height: 18px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+        
+}
+
+.flashsales-set_seconds{
+    width: 44px;
+    height: 30px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-align: left;
+        
+}
+/* 
+.flashsales-topic{
+
+} */
+
+
+.arrow-container{
+    width: 100px;
+    height: 46px;
+    gap: 8px;
+    opacity: 0px;
+    
+}
+
+.arrow__left{
+    width: 46px;
+    height: 46px;
+    gap: 0px;
+    opacity: 0px;
+    
+}
+
+.arrow__right{
+    width: 46px;
+    height: 46px;
+    gap: 0px;
+    opacity: 0px;
+    
+}
+
+                    /*item  */
+
+.flashsales-today__items{
+    width: 1308px;
+    height: 350px;
+    gap: 30px;
+    opacity: 0px;
+    /* position: relative; */
+    display: flex;
+    overflow: hidden;
+
+    
+
+}
+
+.flashsales-today__item{
+    width: 270px;
+    height: 350px;
+    gap: 16px;
+    opacity: 0px;
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+
+}
+
+.bg-item{
+    width: 270px;
+    height: 250px;
+    gap: 0px;
+    border-radius: 4px 0px 0px 0px;
+    opacity: 0px;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bg-item-contain{
+    width: 190px;
+    height: 180px;
+    top: 35px;
+    left: 40px;
+    padding: 14px 9px 14px 9px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bg-item-contain-pic{
+    width: 172px;
+    height: 152px;
+    top: 14px;
+    left: 9px;
+    gap: 0px;
+    opacity: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.flashsales-today__item-discount{
+    width: 55px;
+    height: 26px;
+    top: 12px;
+    left: 12px;
+    padding: 4px 12px 4px 12px;
+    gap: 10px;
+    border-radius: 4px;
+    opacity: 0px;
+    background: #DB4444;
+    color: #FAFAFA;    
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flashsales-today__item-favourite-seen{
+    width: 34px;
+    height: 76px;
+    top: 12px;
+    left: 224px;
+    gap: 8px;
+    opacity: 0px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.flashsales-today__item-favourite{
+    width: 34px;
+    height: 34px;
+    gap: 0px;
+    opacity: 0px;
+    cursor: pointer;
+}
+
+.flashsales-today__item-seen{
+    width: 34px;
+    height: 34px;
+    gap: 0px;
+    opacity: 0px;
+    cursor: pointer;
+    
+}
+
+
+
+.desbribe-item{
+    width: 201px;
+    height: 84px;
+    gap: 8px;
+    opacity: 0px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.desbribe-item__name{
+    width: 201px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    
+    
+}
+
+.describe-item__price{
+    width: 85px;
+    height: 24px;
+    gap: 12px;
+    opacity: 0px;
+    display: flex;
+    
+}
+
+.desbribe-item__price-now{
+    width: 36px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #DB4444;
+}
+
+.desbribe-item__price-old{
+    width: 37px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0.5px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #808080;
+    text-decoration: line-through;
+        
+}
+
+.flashsales-today-addtochart{
+    width: 270px;
+    height: 41px;
+    top: 209px;
+    gap: 0px;
+    border-radius: 0px 0px 4px 4px;
+    opacity: 0px;
+    background: #000000;
+    color: #FAFAFA;    
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+
+}
+
+.describe-item__rate{
+    width: 140px;
+    height: 20px;
+    gap: 8px;
+    opacity: 0px;
+    display: flex;
+    
+}
+
+.rate-by-star{
+    width: 100px;
+    height: 20px;
+    gap: 0px;
+    opacity: 0px;
+    
+}
+
+.amount-rate{
+    width: 32px;
+    height: 20px;
+    gap: 0px;
+    opacity: 0.5px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: left;
+        
+}
+
+.btn-flashsales{
+    width: 234px;
+    height: 56px;
+    top: 1219px;
+    left: 603px;
+    /* padding: 16px 48px 16px 48px; */
+    gap: 10px;
+    border-radius: 4px;
+    opacity: 0px;
+    background: #DB4444;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+        
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FAFAFA;
+    border-color: transparent;
+}
