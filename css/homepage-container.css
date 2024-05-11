@@ -8,17 +8,17 @@
     opacity: 0px; */
     width: 100%;
     display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 182px;
+    /* justify-content: space-around; */
+    position: relative;
+    top: 45px;
     left: -1.5%;
+
 }
 
 .list-and-hot-item__container{
-    width: 1330px;
+    /* width: 1330px; */
     width: 100%;
-    position: absolute;
-    /* justify-content: space-around; */
+    justify-content: space-evenly;
     display: flex;
     
 
@@ -26,10 +26,11 @@
 
 .items-menu{
     list-style: none;
-    position: absolute;
     /* padding-left: 100px; */
-    top: -15px;
-    left: 165px;
+    top: -27px;
+    /* left: 10%;
+    position: absolute; */
+    position: relative;
 }
 
 .set-item-classification{
@@ -73,17 +74,19 @@
     width: 1px;
     height: 384px;
     top: -45px;
-    left: 400px;
+    left: -0%;
     gap: 0px;
     border: 0.5px 0px 0px 0px;
     opacity: 0.3px;
     border: 0.5px solid #000000;
-    position: absolute;
+    position: relative;
 
 }
 
 .hot-item{
-    width: 892px;
+    width: 100%;
+    max-width: 892px;
+    /* width: max-content; */
     height: 344px;
     flex-wrap: wrap;
     /* gap: 0px;
@@ -95,11 +98,10 @@
     /* right: -5%; */
     /* margin-left: 70px; */
     display: flex;
-    justify-content: space-evenly;
-    position: absolute;
     overflow: hidden;
     top: -5px;
-    left: 460px;
+    left: 0;
+    position: relative;
 
 }
 
@@ -111,12 +113,20 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;    
+
+    width: 300px;
+    top: 58px;
+    left: 64px;
+
+    /* position: absolute; */
+
+    
 }
 
 .brand--logo{
     width: 300px;
     height: 49px;
-    top: 65px;
+    top: 58px;
     left: 64px;
     gap: 24px;
     color: #FAFAFA;
@@ -124,6 +134,7 @@
     align-items: center;
     /* justify-content: center; */
     position: absolute;
+    
 
 }   
 
@@ -132,6 +143,7 @@
     height: 49px;
     gap: 0px;
     opacity: 0px;
+
     
 }
 
@@ -160,8 +172,9 @@
     line-height: 65px;
     letter-spacing: 0.04em;
     color: #FAFAFA;
-    position: absolute;
     left: 64px;    
+
+    position: absolute;
 
         
 }
@@ -173,7 +186,6 @@
     left: 67px;
     gap: 8px;
     opacity: 0px;
-    position: absolute;
     text-decoration: none;
     color: #FAFAFA;
     display: flex;
@@ -181,7 +193,7 @@
     font-weight:lighter;
     font-family: Poppins;
     align-items: center;
-
+    position: absolute;
 
     
 }
@@ -204,7 +216,6 @@
 
 .apple-shopnow::after{
     content: "";
-    position: absolute;
     width: 100%;
     height: 1px;
     background-color: #FAFAFA;
@@ -231,7 +242,10 @@
     left: 396px;
     gap: 0px;
     opacity: 0px;
+
     position: absolute;
+    
+
 }
 
 
@@ -239,20 +253,21 @@
 
 
 .flashsales-today-container{
-    width: 1308px;
+    /* width: 1308px; */
+    width: 100%;
     height: 493px;
     top: 666px;
     left: 182px;
     gap: 40px;
 
-    position: absolute;
     display: flex;
     flex-direction: column;
+    position: absolute;
     
 }
 
 .flashsales-today__heading{
-    width: 1170px;
+    /* width: 1170px; */
     height: 103px;
     gap: 470px;
 
@@ -293,7 +308,6 @@
     gap: 16px;
     opacity: 0px;
     
-    position: relative;
     display: flex;
     align-items: center;
 }
@@ -344,7 +358,6 @@
 
     display: flex;
     justify-content: space-between;
-    position: relative;
     top: 5px;
     
 
@@ -394,7 +407,6 @@
     /* left: 63px; */
     opacity: 0px;
     color: #DB4444;
-    position: relative;
     font-size: 25px;
     display: flex;
     
@@ -590,6 +602,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* position: relative; */
     
 }
 
@@ -619,10 +632,10 @@
     background: #DB4444;
     color: #FAFAFA;    
 
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 
 .flashsales-today__item-favourite-seen{
@@ -632,9 +645,9 @@
     left: 224px;
     gap: 8px;
     opacity: 0px;
-    position: absolute;
     display: flex;
     flex-direction: column;
+    position: absolute;
 
     
 }
@@ -730,7 +743,6 @@
     opacity: 0px;
     background: #000000;
     color: #FAFAFA;    
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -740,6 +752,9 @@
     font-weight: 500;
     line-height: 24px;
     text-align: left;
+
+    position: absolute;
+    cursor: pointer;
 
 }
 
@@ -770,6 +785,8 @@
     font-weight: 600;
     line-height: 21px;
     text-align: left;
+    color: #808080;
+
         
 }
 
@@ -789,11 +806,18 @@
     line-height: 24px;
     text-align: left;
         
-    position: absolute;
 
     display: flex;
     align-items: center;
     justify-content: center;
     color: #FAFAFA;
     border-color: transparent;
+
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.btn-flashsales:hover{
+    background-color: #b81e1e;
 }
