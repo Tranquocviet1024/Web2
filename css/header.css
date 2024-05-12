@@ -260,8 +260,14 @@ body {
     .search-component-set {
         padding: 7px 10px;
     } */
+
+    .flashsales-time-container{
+        padding: 0 500px;
+    
+    
+    }
 }
-@media only screen and (min-width: 816px) and (max-width:1048px) {
+@media only screen and (min-width: 816px) and (max-width:1179px) {
     .main {
         width: max-content; 
         /* width: 100%;
@@ -272,21 +278,4 @@ body {
        width: 500px;
     }
 }
-/* <<<<<<< Updated upstream
-}
 
-=======
-
-    .footer-item-container_inclu_5{
-        width: 1170px;
-        justify-content: space-evenly;
-        padding: 0 100px;
-    
-    }
-
-    .header-nabar {
-        padding: 0 70px 0 50px;
-    }
-    
-}
->>>>>>> Stashed changes */
