@@ -277,5 +277,9 @@ body {
     .hot-item{
        width: 500px;
     }
+
+    .temp{
+        padding: 0 500px;
+    }
 }
 
