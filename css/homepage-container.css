@@ -603,7 +603,23 @@
     flex-direction: column;
     position: relative;
 
+}
 
+.block-item:hover{
+    animation: grow linear 0.1s forwards;
+}
+
+@keyframes grow {
+    from{
+        transform: scale(100%);
+    }
+    to{
+        transform: scale(105%);
+    }
+}
+
+.block-item:hover .addtocart{
+    display: block;
 }
 
 .item-bg{
@@ -697,6 +713,10 @@
     
 }
 
+.item__seen:hover{
+    background-color: #DB4444;
+}
+
 
 
 .item__describe{
@@ -762,7 +782,7 @@
         
 }
 
-.flashsales-today-addtochart{
+.flashsales-today-addtocart{
     width: 270px;
     height: 41px;
     top: 209px;
@@ -784,7 +804,10 @@
     position: absolute;
     cursor: pointer;
 
+    display: none;
 }
+
+
 
 .item__describe-rate{
     width: 140px;
@@ -1257,10 +1280,6 @@
     justify-content: flex-start;
     /* overflow: hidden; */
     flex-wrap: wrap;
-    
-
-
-    
 
 }
 
@@ -1433,29 +1452,6 @@
         
 }
 
-.flashsales-today-addtochart{
-    width: 270px;
-    height: 41px;
-    top: 209px;
-    gap: 0px;
-    border-radius: 0px 0px 4px 4px;
-    opacity: 0px;
-    background: #000000;
-    color: #FAFAFA;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: 'Poppins';
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: left;
-
-    position: absolute;
-    cursor: pointer;
-
-}
 
 .item__describe-rate{
     width: 140px;
