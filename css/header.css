@@ -138,6 +138,10 @@ body {
     text-decoration: none;
 }
 
+.exclusive:hover{
+    animation: grow-icon 0.1s forwards;
+}
+
 .header__menu-link {
     display: flex;
     gap: 48px;
@@ -233,6 +237,18 @@ body {
     top: 0px;
     /* margin-bottom:60px ; */
 }
+
+.hover_color{
+    text-decoration: none;
+}
+
+.hover_color:hover{
+    color: #DB4444;
+}
+
+
+
+
 /* Responsive Design */
 @media only screen and (max-width: 815px) {
     .main{
@@ -273,11 +289,8 @@ body {
         /* width: 100%;
         max-width: none;  */
     }
-
     .hot-item{
        width: 500px;
     }
-
-
 }
 
