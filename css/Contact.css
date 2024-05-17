@@ -144,14 +144,6 @@
     position: relative;
   }
   
-  /* Modifiers */
-  .contact__info-icon--phone {
-    /* Styles for phone icon */
-  }
-  
-  .contact__info-icon--mail {
-    /* Styles for mail icon */
-  }
  .line-1 {
     border-style: solid;
     border-color: var(--text2, #000000);
