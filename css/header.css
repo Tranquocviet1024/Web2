@@ -90,7 +90,7 @@ body {
 .english {
     color: var(--text, #fafafa);
     font-size: 18px;
-
+    font-weight: 400;
 
 }
 
