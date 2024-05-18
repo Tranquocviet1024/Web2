@@ -1,31 +1,31 @@
 /* Block */
 .contact-form {
-    max-width: 800px;
-    margin: 0 auto;
+    width: 1170px;
+    height: 457px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 80px;
     font-size: 14px;
+    position: absolute;
+    top: 323px;
+
+
   }
   
   .roadmap {
     display: flex;
     flex-direction: row;
-    gap: 0.75rem;
     align-items: center;
-    position: relative;
-    margin-left: 135px;
-    margin-top: 80px;
+    position: absolute;
     justify-content: flex-start;
-  }
-  .roadmap__account {
-    color: var(--text2, #000000);
-    text-align: left;
-    line-height:  1.3125rem;
-    font-weight:  400;
-    opacity: 0.5;
-    position: relative;
+    top: 222px;
+
+    
+     }
+    .roadmap__acco  unt {
+    color: var(-  -text2, #000000);
+    line-height:   1.3125rem;
+    font-weightion: relative;
     font-size: 14px;
   }
   .roadmap__line-1 {
@@ -51,26 +51,48 @@
 
   /* Elements */
   .contact__info {
-    padding: 40px 35px 51px 35px;
-    flex: 0 0 40%;
     background: #ffffff;
     border-radius: 0.25rem;
     position: relative;
     box-shadow: 0rem 0.0625rem 0.8125rem 0rem rgba(0, 0, 0, 0.05);
-    overflow: hidden;
     height: 457px;
+    width: 340px;
+    padding: 40px 35px 51px 35px;
+    border-radius: 4px;
+
 }
 
+.contact__info-frame{
+  width: 270px;
+  height: 366px;
+  top: 40px;
+  left: 35px;
+  gap: 32px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form-frame{
+  width: 737px;
+  height: 377px;
+  top: 40px;
+  left: 31px;
+  gap: 32px;
+  position: absolute;
+  
+}
   
   .contact__form {
-    flex: 0 0 55%;
     background:  #ffffff;
-    border-radius: 0.25rem;
-    position: relative;
+    position: absolute;
     box-shadow:0rem 0.0625rem 0.8125rem 0rem rgba(0, 0, 0, 0.05);
-    padding: 40px 32px;
-    overflow: hidden;
     height: 457px;
+    width: 800px;
+    left: 505px;
+    padding: 40px 32px 40px 31px;
+    border-radius: 4px;
+
   }
   
   .contact__info-item {
@@ -140,8 +162,15 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    right:-250px;
-    position: relative;
+    right: 0;
+    position: absolute;
+
+    width: 215px;
+    height: 56px; 
+    padding: 16px 48px 16px 48px;
+    gap: 10px;
+    border-radius: 4px;
+
   }
   
  .line-1 {

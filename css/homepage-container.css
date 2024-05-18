@@ -5,7 +5,7 @@
     height: 344px;
     left: 10%;
     gap: 16px;
-    opacity: 0px; */
+     */
     width: 100%;
     display: flex;
     /* justify-content: space-around; */
@@ -62,7 +62,7 @@
     height: 103%;
     top: -8%;
     left: 250px;
-    gap: 0px;
+    
     border: 0.5px 0px 0px 0px;
     opacity: 0.3px;
     border-left: 0.5px solid #000000;
@@ -74,7 +74,7 @@
     height: 384px;
     top: -45px;
     left: -0%;
-    gap: 0px;
+    
     border: 0.5px 0px 0px 0px;
     opacity: 0.3px;
     border: 0.5px solid #AFAFAF;
@@ -88,8 +88,8 @@
     /* width: max-content; */
     height: 344px;
     flex-wrap: wrap;
-    /* gap: 0px;
-    opacity: 0px; */
+    /* 
+     */
     /* position: relative;   */
     /* transform: translateX(-10%); */
     /* top: 15px; */
@@ -140,8 +140,8 @@
 .set-logo{
     width: 40px;
     height: 49px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
 
     
 }
@@ -149,8 +149,8 @@
 .set-name{
     width: 136px;
     height: 20px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 400;
@@ -163,8 +163,8 @@
     width: 250px;
     height: 120px;
     top: 135px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     font-family: 'Inter';
     font-size: 40px;
     font-weight: 600;
@@ -184,7 +184,7 @@
     top: 285px;
     left: 67px;
     gap: 8px;
-    opacity: 0px;
+    
     text-decoration: none;
     color: #FAFAFA;
     display: flex;
@@ -201,7 +201,7 @@
     width: 81px;
     height: 28px;
     gap: 4px;
-    opacity: 0px;
+    
     position: relative  ;
     color: #FAFAFA;
     text-decoration: none;
@@ -228,9 +228,9 @@
     height: 14px;
     top: 5px;
     left: 3.5px;
-    gap: 0px;
+    
     border: 1.5px 0px 0px 0px;
-    opacity: 0px;
+    
 }
 
 
@@ -239,8 +239,8 @@
     height: 352px;
     top: 0px;
     left: 396px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
 
     position: absolute;
     
@@ -283,7 +283,7 @@
     width: 600px;
     height: 103px;
     gap: 87px;
-    opacity: 0px;
+    
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -295,7 +295,7 @@
     width: 211px;
     height: 103px;
     gap: 24px;
-    opacity: 0px;
+    
     
     display: flex;
     flex-direction: column;
@@ -306,7 +306,7 @@
     width: 100px;
     height: 40px;
     gap: 16px;
-    opacity: 0px;
+    
     
     display: flex;
     align-items: center;
@@ -315,17 +315,17 @@
 .topic-thing{
     width: 20px;
     height: 40px;
-    gap: 0px;
+    
     border-radius: 4px;
-    opacity: 0px;
+    
     background: #DB4444;    
 }
 
 .topic-head{
     width: 64px;
     height: 20px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 600;
@@ -337,8 +337,8 @@
 .heading__content{
     width: 211px;
     height: 48px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     font-family: 'Inter';
     font-size: 36px;
     font-weight: 600;
@@ -353,8 +353,8 @@
 .flashsales-time{
     width: 302px;
     height: 50px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
 
     display: flex;
     justify-content: space-between;
@@ -369,7 +369,7 @@
     width: 46px;
     height: 50px;
     gap: 4px;
-    opacity: 0px;
+    
     
 }
 
@@ -378,8 +378,8 @@
 .flashsales__days{
     width: 31px;
     height: 18px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     font-family: 'Poppins';
     font-size: 12px;
     font-weight: 500;
@@ -391,8 +391,8 @@
 .flashsales-set_days{
     width: 46px;
     height: 28px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     font-family: 'Inter';
     font-size: 32px;
     font-weight: 700;
@@ -406,7 +406,7 @@
     height: 16px;
     top: 20px;
     /* left: 63px; */
-    opacity: 0px;
+    
     color: #DB4444;
     font-size: 25px;
     display: flex;
@@ -419,15 +419,15 @@
     height: 50px;
     left: 84px;
     gap: 4px;
-    opacity: 0px;
+    
     
 }
 
 .flashsales__hours{
     width: 35px;
     height: 18px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     font-family: 'Poppins';
     font-size: 12px;
     font-weight: 500;
@@ -441,8 +441,8 @@
 .flashsales-set_hours{
     width: 43px;
     height: 30px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     font-family: 'Inter';
     font-size: 32px;
     font-weight: 700;
@@ -456,15 +456,15 @@
     height: 50px;
     left: 164px;
     gap: 4px;
-    opacity: 0px;
+    
     
 }
 
 .flashsales__minutes{
     width: 49px;
     height: 18px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     font-family: 'Poppins';
     font-size: 12px;
     font-weight: 500;
@@ -476,8 +476,8 @@
 .flashsales-set_minutes{
     width: 39px;
     height: 28px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     font-family: 'Inter';
     font-size: 32px;
     font-weight: 700;
@@ -492,15 +492,15 @@
     height: 50px;
     left: 251px;
     gap: 4px;
-    opacity: 0px;
+    
     
 }
 
 .flashsales__seconds{
     width: 52px;
     height: 18px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     font-family: 'Poppins';
     font-size: 12px;
     font-weight: 500;
@@ -512,8 +512,8 @@
 .flashsales-set_seconds{
     width: 44px;
     height: 30px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     font-family: 'Inter';
     font-size: 32px;
     font-weight: 700;
@@ -532,7 +532,7 @@
     width: 100px;
     height: 46px;
     gap: 8px;
-    opacity: 0px;
+    
     display: flex;
     position: absolute;
     right: 0;
@@ -542,16 +542,16 @@
 .arrow__left{
     width: 46px;
     height: 46px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     
 }
 
 .arrow__right{
     width: 46px;
     height: 46px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     
 }
 
@@ -574,7 +574,7 @@
     width: 1308px;
     height: 350px;
     gap: 30px;
-    opacity: 0px;
+    
     display: flex;
     position: relative;
     /* float: left; */
@@ -616,9 +616,9 @@
 .item-bg{
     width: 270px;
     height: 250px;
-    gap: 0px;
+    
     border-radius: 4px 0px 0px 0px;
-    opacity: 0px;
+    
     background: #F5F5F5;
     display: flex;
     align-items: center;
@@ -632,8 +632,8 @@
     top: 35px;
     left: 40px;
     padding: 14px 9px 14px 9px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -646,8 +646,8 @@
     height: 152px;
     top: 14px;
     left: 9px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
 
     display: flex;
     justify-content: center;
@@ -663,7 +663,7 @@
     padding: 4px 12px 4px 12px;
     gap: 10px;
     border-radius: 4px;
-    opacity: 0px;
+    
     background: #DB4444;
     color: #FAFAFA;    
 
@@ -696,7 +696,7 @@
     top: 12px;
     left: 224px;
     gap: 8px;
-    opacity: 0px;
+    
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -707,8 +707,8 @@
 .item__favourite{
     width: 34px;
     height: 34px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -720,8 +720,8 @@
 .item__seen{
     width: 34px;
     height: 34px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -746,7 +746,7 @@
     width: 201px;
     height: 84px;
     gap: 8px;
-    opacity: 0px;
+    
     display: flex;
     /* align-items: center; */
     justify-content: center;
@@ -757,8 +757,8 @@
 .item__desbribe-name{
     width: 201px;
     height: 24px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 500;
@@ -772,16 +772,14 @@
     width: 85px;
     height: 24px;
     gap: 12px;
-    opacity: 0px;
     display: flex;
+    align-items: center;
     
 }
 
 .item__describe-price__new{
     width: 36px;
     height: 24px;
-    gap: 0px;
-    opacity: 0px;
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 500;
@@ -793,7 +791,7 @@
 .item__describe-price__old{
     width: 37px;
     height: 24px;
-    gap: 0px;
+    
     opacity: 0.5px;
     font-family: 'Poppins';
     font-size: 16px;
@@ -833,23 +831,23 @@
     width: 140px;
     height: 20px;
     gap: 8px;
-    opacity: 0px;
-    display: flex;
     
+    display: flex;
+    align-items: center;
 }
 
 .rate-by-star{
     width: 100px;
     height: 20px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     
 }
 
 .amount-rate{
     width: 32px;
     height: 20px;
-    gap: 0px;
+    
     opacity: 0.5px;
     font-family: 'Poppins';
     font-size: 14px;
@@ -869,7 +867,7 @@
     /* padding: 16px 48px 16px 48px; */
     gap: 10px;
     border-radius: 4px;
-    opacity: 0px;
+    
     background: #DB4444;
     font-family: 'Poppins';
     font-size: 16px;
@@ -900,7 +898,7 @@
     height: 1px;
     top: 1335px;
     left: 50%;
-    gap: 0px;
+    
     border: 0.5px 0px 0px 0px;
     background-color: #B3b3b3;
     position: absolute;
@@ -998,7 +996,7 @@
     height: 1px;
     top: 1800px;
     left: 50%;
-    gap: 0px;
+    
     border: 0.5px 0px 0px 0px;
     background-color: #B3b3b3;
     position: absolute;
@@ -1063,7 +1061,7 @@
     padding: 16px 48px 16px 48px;
     gap: 10px;
     border-radius: 4px;
-    opacity: 0px;
+    
     background: #DB4444;
     position: absolute;
     right: 0;
@@ -1506,7 +1504,7 @@
 .block-items_new-arrival-frame-child-small{
     width: 270px;
     height: 284px;
-    gap: 0px;
+    
     border-radius: 4px;
     overflow: hidden;
     position: relative;
@@ -1585,8 +1583,8 @@
 .service-inf-item__content-heading{
     width: 256px;
     height: 28px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     font-family: 'Poppins';
     font-size: 20px;
     font-weight: 600;
@@ -1598,8 +1596,8 @@
 .service-inf-item__content-body{
     width: 249px;
     height: 21px;
-    gap: 0px;
-    opacity: 0px;
+    
+    
     font-family: 'Poppins';
     font-size: 14px;
     font-weight: 400;

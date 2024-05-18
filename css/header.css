@@ -246,12 +246,13 @@ body {
     border-color: var(--button, #000000);
     border-width: 0.03125rem 0 0 0;
     opacity: 0.30000001192092896;
-    height: 0rem;
+    width: 100%;
+    height: 1px;
     position: relative;
     left: 0;
     right: 0;
     top: 0px;
-    /* margin-bottom:60px ; */
+    z-index: 9;
 }
 
 .hover_color{
@@ -269,15 +270,11 @@ body {
 @media only screen and (max-width: 815px) {
     .main{
         width: max-content;
-        /* width: 100%; */
-        /* max-width: none;  */
     }
 }
 @media only screen and (min-width: 816px) and (max-width:1179px) {
     .main {
         width: max-content; 
-        /* width: 100%;
-        max-width: none;  */
     }
 }
 
