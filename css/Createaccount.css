@@ -1,54 +1,60 @@
-@ -1,286 +0,0 @@
-.Box_Create_acount,
-.Box_Create_acount * {
-  box-sizing: border-box;
-}
+
 
 .max-width{
   width: 1305px;
   height: 781px;
   /* transform: translateX(-10%); */
+  position: absolute;
+  top: 200px;
 
 }
 
 .Box_Create_acount {
   display: flex;
-  flex-direction: row;
+  width: 1305px;
   gap: 192px;
   align-items: center;
-  justify-content: flex-start;
-  position: relative;
-  margin-top: 60px;
+  justify-content: space-between;
+
 }
 
+.Box_link_create_other{
+  width: 371px;
+  display: flex;
+  justify-content: center;
+}
 
 .side-image {
+  width: 805px;
+  height: 781px;
+  padding: 75px 0px 0px 0px;
+  border-radius: 4px;
+  
   background: #cbe4e8;
-  border-radius: 0rem 0.25rem 0.25rem 0rem;
-  flex-shrink: 0;
-  width: 50.3125rem;
-  height: 48.8125rem;
   position: relative;
   overflow: hidden;
+  background-size: contain;
+
 }
 
 .img-background {
-  width: 57.4375rem;
-  height: 44.125rem;
+  width: 919px;
+  height: 706px;
+  top: 75px;
+  left: -8px;
+
   position: absolute;
-  left: -0.5rem;
-  top: 4.6875rem;
-  object-fit: cover;
+
 }
 
 
 .box-text {
+  width: 371px;
+  height: 530px;
+  gap: 48px;
+  
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
   position: relative;
 }
 
@@ -77,9 +83,12 @@
 }
 
 .Box-Content {
+  width: 371px;
+  height: 404px;
+  gap: 40px;
+  
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
@@ -199,13 +208,12 @@
 /* CSS cho phần "Already have account?" */
 .Verification {
   display: flex;
-  flex-direction: row;
   gap: 1rem;
   /* flex-shrink: 0; */
   position: relative;
   flex-wrap: nowrap;
   align-items: center;
-  margin-left: 80px;
+  justify-content: center;
   margin-top: 35px;
 }
 
