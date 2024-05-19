@@ -1,31 +1,39 @@
 /* Block */
 .contact-form {
-    max-width: 800px;
-    margin: 0 auto;
+    width: 1170px;
+    height: 457px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 80px;
     font-size: 14px;
+    position: absolute;
+    top: 323px;
+
+
+  }
+
+  .frame-width{
+    width: 1170px;
+    position: absolute;
+    height: 21px;
+    top: 222px;
   }
   
   .roadmap {
     display: flex;
     flex-direction: row;
-    gap: 0.75rem;
     align-items: center;
-    position: relative;
-    margin-left: 135px;
-    margin-top: 80px;
+    position: absolute;
     justify-content: flex-start;
-  }
-  .roadmap__account {
-    color: var(--text2, #000000);
-    text-align: left;
-    line-height:  1.3125rem;
-    font-weight:  400;
-    opacity: 0.5;
-    position: relative;
+    top: 0;
+    left: 0;
+
+    
+     }
+    .roadmap__acco  unt {
+    color: var(-  -text2, #000000);
+    line-height:   1.3125rem;
+    font-weightion: relative;
     font-size: 14px;
   }
   .roadmap__line-1 {
@@ -51,36 +59,110 @@
 
   /* Elements */
   .contact__info {
-    padding: 40px 35px 51px 35px;
-    flex: 0 0 40%;
     background: #ffffff;
     border-radius: 0.25rem;
     position: relative;
     box-shadow: 0rem 0.0625rem 0.8125rem 0rem rgba(0, 0, 0, 0.05);
-    overflow: hidden;
     height: 457px;
+    width: 340px;
+    left: 0;
+    padding: 40px 35px 51px 35px;
+    border-radius: 4px;
+
 }
 
+.contact__form {
+  background:  #ffffff;
+  position: relative;
+  box-shadow:0rem 0.0625rem 0.8125rem 0rem rgba(0, 0, 0, 0.05);
+  height: 457px;
+  width: 800px;
+  right: 0;
+  padding: 40px 32px 40px 31px;
+  border-radius: 4px;
+
+}
+
+
+.contact__info-frame{
+  width: 270px;
+  height: 366px;
+  top: 40px;
+  left: 35px;
+  gap: 32px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form-frame{
+  width: 737px;
+  height: 377px;
+  top: 40px;
+  left: 31px;
+  gap: 32px;
+  position: absolute;
   
-  .contact__form {
-    flex: 0 0 55%;
-    background:  #ffffff;
-    border-radius: 0.25rem;
-    position: relative;
-    box-shadow:0rem 0.0625rem 0.8125rem 0rem rgba(0, 0, 0, 0.05);
-    padding: 40px 32px;
-    overflow: hidden;
-    height: 457px;
-  }
+}
   
+
   .contact__info-item {
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 262px;
+    height: 122px;
+    gap: 24px;
   }
   
+  .contact__info-item__2{
+    width: 250px;
+    height: 180px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+
+.contact__info-text{
+  width: 265px;
+  height: 21px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+
+}
+
+.contact__info-content__2{
+  width: 250px;
+  height: 116px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contact__info-text__2{
+  width: 250px;
+  height: 42px;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+    
+}
+
   .contact__info-header {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    width: 135px;
+    height: 40px;
+    gap: 16px;
   }
   
   .contact__info-icon {
@@ -90,8 +172,12 @@
   }
   
   .contact__info-content {
-    /* padding-left: 34px; */
-    line-height: 24px;
+    width: 265px;
+    height: 58px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .contact__separator {
@@ -140,17 +226,22 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    right:-250px;
-    position: relative;
+    right: 0;
+    position: absolute;
+
+    width: 215px;
+    height: 56px; 
+    padding: 16px 48px 16px 48px;
+    gap: 10px;
+    border-radius: 4px;
+
   }
   
  .line-1 {
-    border-style: solid;
-    border-color: var(--text2, #000000);
-    border-width: 0.0625rem 0 0 0;
-    width: 100%;
-    height: 0rem;
-    margin: 32px 0;
-    position: relative;
+  width: 100%;
+  height: 1px;
+  opacity: 0.5px;
+  background-color: #000000;
+  
 }
       

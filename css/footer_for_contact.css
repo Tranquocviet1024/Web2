@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 5462px;
+    top: 920px;
     flex-wrap: wrap;
     
 }
@@ -490,7 +490,7 @@
 }
 
 .copyright-content{
-    width: 311px;
+    width: 316px;
     height: 24px;
     font-family: 'Poppins';
     font-size: 16px;
