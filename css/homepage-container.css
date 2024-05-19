@@ -54,8 +54,6 @@
 
 /*----------------------------*/
 .list-and-hot-item{
-<<<<<<< HEAD
-=======
     /* position: absolute;
     top: 182px;
     width: 217px;
@@ -63,7 +61,6 @@
     left: 10%;
     gap: 16px;
      */
->>>>>>> a95f70c15bb4e45fabc8a65c8557342195955c81
     width: 100%;
     display: flex;
     position: relative;
@@ -110,22 +107,6 @@
 .see-more{
 
 }
-<<<<<<< HEAD
-
-=======
-/* 
-.items-menu::after{
-    content: "";
-    height: 103%;
-    top: -8%;
-    left: 250px;
-    
-    border: 0.5px 0px 0px 0px;
-    opacity: 0.3px;
-    border-left: 0.5px solid #000000;
-    position: absolute;
-} */
->>>>>>> a95f70c15bb4e45fabc8a65c8557342195955c81
 
 .vertical-line{
     width: 1px;
@@ -653,6 +634,7 @@
 }
 
 .block-item:hover 
+
 .add-to-cart{
     display: block;
     width: 100%;
