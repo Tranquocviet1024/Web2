@@ -1,3 +1,24 @@
+.roadmap__item{
+    color: #000000;
+    text-align: left;
+    line-height:1.3125rem;
+    font-weight: 400;
+    position: relative;
+    font-size: 14px;
+  }
+.roadmap__item.roadmap__item-home {
+    opacity: 0.5;
+  }
+.roadmap__line-1 {
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-width: 0.0625rem 0 0 0;
+    flex-shrink: 0;
+    width: 0.824375rem;
+    height: 0rem;
+    position: relative;
+    transform: rotate(117.051deg) scale(1, 1);
+}
 .cart {
     width: 80%;
     margin: 80px auto 0;
