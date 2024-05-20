@@ -153,9 +153,9 @@ body {
     text-decoration: none;
 }
 
-.exclusive:hover{
+/* .exclusive:hover{
     animation: grow-icon 0.1s forwards;
-}
+} */
 
 .header__menu-link {
     display: flex;

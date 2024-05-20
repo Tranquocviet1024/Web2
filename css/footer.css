@@ -25,7 +25,18 @@
     position: absolute;
     top: 838px;
     flex-wrap: wrap;
-    
+}
+
+.footer__container__for-account-page{
+    width: 100%;
+    padding: 80px 0px 84px 0px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1093px;
+    flex-wrap: wrap;   
 }
 
 .footer__container__for-SignupCreateaccount{
@@ -49,6 +60,18 @@
     align-items: center;
     position: absolute;
     top: 920px;
+    flex-wrap: wrap;
+}
+
+.footer__container__for-wishlist{
+    width: 100%;
+    padding: 80px 0px 84px 0px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1346px;
     flex-wrap: wrap;
 }
 

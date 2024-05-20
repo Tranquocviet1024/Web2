@@ -6,6 +6,8 @@
   /* transform: translateX(-10%); */
   position: absolute;
   top: 200px;
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -15,6 +17,9 @@
   gap: 192px;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  left: -5.5%;
+
 
 }
 
@@ -27,7 +32,7 @@
 .side-image {
   width: 805px;
   height: 781px;
-  padding: 75px 0px 0px 0px;
+  padding: 100px;
   border-radius: 4px;
   
   background: #cbe4e8;
@@ -41,10 +46,9 @@
   width: 919px;
   height: 706px;
   top: 75px;
-  left: -8px;
-
+  left: 0px;
   position: absolute;
-
+  padding: 0 200px 0 0;
 }
 
 
@@ -242,6 +246,8 @@
 }
 
 .Box_confirm_login{
+  width: 371px;
+  height: 56px;
   display: flex;
   flex-direction: row;
   gap: 87px;
@@ -292,4 +298,11 @@
   line-height: 1.5rem;
   font-weight:  400;
   position: relative;
+  width: 141px ;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  text-decoration: none;
 }
