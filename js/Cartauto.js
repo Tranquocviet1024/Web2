@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
             subtotal += rowSubtotal;
         });
 
-        const total = subtotal; // Bạn có thể thêm các phép tính khác cho phí vận chuyển, thuế, v.v.
+        const total = subtotal;
         document.getElementById('cart-subtotal').innerText = `$${subtotal.toFixed(2)}`;
         document.getElementById('cart-total').innerText = `$${total.toFixed(2)}`;
     }
