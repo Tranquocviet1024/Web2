@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exclusive Shop</title>
     <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/footer_billing.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/Billing.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -89,100 +89,146 @@
                 </div>
                 <div class="billing-details">Billing Details</div>
 
-                <div class="form">
-                    <div class="form__group form__group--first-name">
-                      <label class="form__label" for="first-name">
-                        <span class="form__label-text">First Name</span>
-                        <span class="form__label-required">*</span>
-                      </label>
-                      <input type="text" id="first-name" class="form__input" required>
-                    </div>
-                    <div class="form__group form__group--company-name">
-                      <label class="form__label" for="company-name">Company Name</label>
-                      <input type="text" id="company-name" class="form__input">
-                    </div>
-                    <div class="form__group form__group--street-address">
-                      <label class="form__label" for="street-address">
-                        <span class="form__label-text">Street Address</span>
-                        <span class="form__label-required">*</span>
-                      </label>
-                      <input type="text" id="street-address" class="form__input" required>
-                    </div>
-                    <div class="form__group form__group--apartment">
-                      <label class="form__label" for="apartment">Apartment, floor, etc. (optional)</label>
-                      <input type="text" id="apartment" class="form__input">
-                    </div>
-                    <div class="form__group form__group--town-city">
-                      <label class="form__label" for="town-city">
-                        <span class="form__label-text">Town/City</span>
-                        <span class="form__label-required">*</span>
-                      </label>
-                      <input type="text" id="town-city" class="form__input" required>
-                    </div>
-                    <div class="form__group form__group--phone-number">
-                      <label class="form__label" for="phone-number">
-                        <span class="form__label-text">Phone Number</span>
-                        <span class="form__label-required">*</span>
-                      </label>
-                      <input type="tel" id="phone-number" class="form__input" required>
-                    </div>
-                    <div class="form__group form__group--email-address">
-                      <label class="form__label" for="email-address">
-                        <span class="form__label-text">Email Address</span>
-                        <span class="form__label-required">*</span>
-                      </label>
-                      <input type="email" id="email-address" class="form__input" required>
-                    </div>
-                    <div class="form__group form__group--save-info">
-                        <label class="form__label--checkbox">
-                          <input type="checkbox" class="form__input--checkbox" />
-                          <span class="form__custom-checkbox"></span>
-                          <span class="form__label-text--checkbox">Save this information for faster check-out next time</span>
-                        </label>
-                    </div>
-                    
-                    <div class="checkout">
-                        <div class="checkout__coupon">
-                          <div class="checkout__coupon-code">
-                            <div class="checkout__coupon-text">
-                                <input type="text" placeholder="Coupon Code" style="height: 56px;padding-left: 12px;"></div>
-                          </div>
-                          <div class="checkout__button">
-                            <div class="checkout__button-text">Apply Coupon</div>
-                          </div>
+                <div class="billing-container_content">
+                    <div class="form">
+                        <div class="form__group form__group--first-name">
+                          <label class="form__label" for="first-name">
+                            <span class="form__label-text">First Name</span>
+                            <span class="form__label-required">*</span>
+                          </label>
+                          <input type="text" id="first-name" class="form__input" required>
                         </div>
-                        <div class="checkout__summary">
-                          <div class="checkou__summary-content">
-                            <div class="checkout__cart-total" style="margin-bottom: 8px;margin-top: 32px; font-size: 20px;">Cart Total</div>
-                          <div class="check checkout__subtotal">
-                            <div class="checkout__subtotal-text">Subtotal:</div>
-                            <div class="checkout__amount" id="cart-subtotal">$0.00</div>
-                          </div>
-                          <div class="line"></div>
-                          <div class="check checkout__shipping">
-                            <div class="checkout__shipping-text">Shipping:</div>
-                            <div class="checkout__shipping-amount">Free</div>
-                          </div>
-                          <div class="line"></div>
-                          <div class="check checkout__total">
-                            <div class="checkout__total-text">Total:</div>
-                            <div class="checkout__amount" id="cart-total">$0.00</div>
-                          </div>
-                          </div>
-                          <div class="checkout__button checkout__button--checkout "style="margin-top: 16px;">
-                            <div class="checkout__button-text" >Proceed to Checkout</div>
-                          </div>
-                           
+                        <div class="form__group form__group--company-name">
+                          <label class="form__label" for="company-name">Company Name</label>
+                          <input type="text" id="company-name" class="form__input">
+                        </div>
+                        <div class="form__group form__group--street-address">
+                          <label class="form__label" for="street-address">
+                            <span class="form__label-text">Street Address</span>
+                            <span class="form__label-required">*</span>
+                          </label>
+                          <input type="text" id="street-address" class="form__input" required>
+                        </div>
+                        <div class="form__group form__group--apartment">
+                          <label class="form__label" for="apartment">Apartment, floor, etc. (optional)</label>
+                          <input type="text" id="apartment" class="form__input">
+                        </div>
+                        <div class="form__group form__group--town-city">
+                          <label class="form__label" for="town-city">
+                            <span class="form__label-text">Town/City</span>
+                            <span class="form__label-required">*</span>
+                          </label>
+                          <input type="text" id="town-city" class="form__input" required>
+                        </div>
+                        <div class="form__group form__group--phone-number">
+                          <label class="form__label" for="phone-number">
+                            <span class="form__label-text">Phone Number</span>
+                            <span class="form__label-required">*</span>
+                          </label>
+                          <input type="tel" id="phone-number" class="form__input" required>
+                        </div>
+                        <div class="form__group form__group--email-address">
+                          <label class="form__label" for="email-address">
+                            <span class="form__label-text">Email Address</span>
+                            <span class="form__label-required">*</span>
+                          </label>
+                          <input type="email" id="email-address" class="form__input" required>
+                        </div>
+                        <div class="form__group form__group--save-info">
+                            <label class="form__label--checkbox">
+                              <input type="checkbox" class="form__input--checkbox" />
+                              <span class="form__custom-checkbox"></span>
+                              <span class="form__label-text--checkbox">Save this information for faster check-out next time</span>
+                            </label>
+                        </div>    
+                    </div>
+                
+
+                    <div class="Oder-bill">
+                        <form action="#">
+                            <table id="cart-table" style="width: 100%;">
+                                <thead>
+                                    <tr></tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </form>
+                        <div class="checkout">
+                            <div class="checkout__summary">
+                                    <div class="checkou__summary-content">
+                                        <div class="checkout__cart-total" style="margin-bottom: 8px;margin-top: 32px; font-size: 20px;">Cart Total</div>
+                                    <div class="check checkout__subtotal">
+                                        <div class="checkout__subtotal-text">Subtotal:</div>
+                                        <div class="checkout__amount" id="cart-subtotal">$0.00</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="check checkout__shipping">
+                                        <div class="checkout__shipping-text">Shipping:</div>
+                                        <div class="checkout__shipping-amount">Free</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="check checkout__total">
+                                        <div class="checkout__total-text">Total:</div>
+                                        <div class="checkout__amount" id="cart-total">$0.00</div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="frame-835">
+                                <div class="payment-method">
+                                  <label class="payment-method__option">
+                                    <input type="radio" name="payment" class="payment-method__input" />
+                                    <span class="payment-method__custom-radio"></span>
+                                    <span class="payment-method__text">Bank</span>
+                                  </label>
+                                </div>
+                                <div class="payment-method__icons">
+                                  <div class="payment-method__icon payment-method__icon--bkash">
+                                    <img class="payment-method__image" src="../img/Bkash.png" alt="Bkash" />
+                                  </div>
+                                  <div class="payment-method__icon payment-method__icon--visa">
+                                    <img class="payment-method__image" src="../img/Visa.png" alt="Visa" />
+                                  </div>
+                                  <div class="payment-method__icon payment-method__icon--mastercard">
+                                    <img class="payment-method__image" src="../img/Matercard.png" alt="Mastercard" />
+                                  </div>
+                                  <div class="payment-method__icon payment-method__icon--nagad">
+                                    <img class="payment-method__image" src="../img/Ariap.png" alt="Nagad" />
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="payment-method">
+                                <label class="payment-method__option">
+                                  <input type="radio" name="payment" class="payment-method__input" />
+                                  <span class="payment-method__custom-radio"></span>
+                                  <span class="payment-method__text">Cash on delivery</span>
+                                </label>
+                              </div>
+
+                            <div class="checkout__coupon">
+                                    <div class="checkout__coupon-code">
+                                    <div class="checkout__coupon-text">
+                                        <input type="text" placeholder="Coupon Code" style="height: 56px;width: 235px;;padding-left: 12px;"></div>
+                                    </div>
+                                    <div class="checkout__button">
+                                    <div class="checkout__button-text">Apply Coupon</div>
+                                    </div>
+                            </div>
+    
+                            <div class="checkout__button oder__button--oder "style="margin-top: 16px; width: 206px;">
+                                <div class="oder__button-text" style="
+                                background: color #db4444;;
+                                color: #fafafa;
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 500">
+                                                                    Proceed Oder
+                                                                </div>
+                            </div>
                         </div>
                     </div>
-
-
                 </div>
-                  
-
-
-
-
             </div>
 
               
@@ -282,5 +328,47 @@
         </div>
     </div>
 </div>
+<script >
+ document.addEventListener('DOMContentLoaded', function() {
+    const cartTable = document.querySelector('#cart-table tbody');
+
+    if (cartTable) {
+        loadCartItems();
+    }
+
+    function loadCartItems() {
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    cartItems.forEach(item => {
+        const newRow = document.createElement('tr');
+        newRow.innerHTML = `
+            <td>
+                <img src="${item.image}" alt="${item.name}" style="width: 50px; height: auto;">
+            </td>
+            <td>${item.name}</td>
+            <td >$${(item.price * item.quantity).toFixed(2)}</td>
+        `;
+
+        cartTable.appendChild(newRow);
+    });
+
+    updateCartTotal();
+    }
+
+    function updateCartTotal() {
+    const cartRows = document.querySelectorAll('#cart-table tbody tr');
+    let subtotal = 0;
+    cartRows.forEach(function(row) {
+        const priceElement = row.querySelector('td:nth-child(3)');
+        const price = parseFloat(priceElement.innerText.replace('$', ''));
+        subtotal += price;
+    });
+
+    const total = subtotal;
+    document.getElementById('cart-subtotal').innerText = `$${subtotal.toFixed(2)}`;
+    document.getElementById('cart-total').innerText = `$${total.toFixed(2)}`;
+    }
+});
+
+</script>
 </body>
 </html>

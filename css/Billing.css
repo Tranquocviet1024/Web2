@@ -41,7 +41,10 @@
     font-weight:500;
     position: relative;
   }
-
+.billing-container_content{
+    display: flex;
+    gap: 178px;
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -131,4 +134,211 @@
   line-height:  24px;
   font-weight:  400;
   position: relative;
+}
+
+
+
+
+.Oder-bill{
+
+}
+
+.frame-835 {
+  display: flex;
+  flex-direction: row;
+  gap: 155px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.payment-method {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.payment-method__option {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.payment-method__input {
+  display: none;
+}
+
+.payment-method__custom-radio {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1.5px solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-method__input:checked + .payment-method__custom-radio {
+  background-color: #000000;
+}
+
+.payment-method__text {
+  color: #000000;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.payment-method__icons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.payment-method__icon {
+  flex-shrink: 0;
+  width: 42px;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.payment-method__image {
+  width: 100%;
+  height: 100%;
+}
+
+.checkout {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.checkout__coupon{
+    display: flex;
+    align-items: center;
+    margin-top: 32px;;
+    justify-content:space-between;
+}
+.checkout__coupon-section {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.checkout__coupon-input {
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 300px;
+  height: 56px;
+  position: relative;
+  overflow: hidden;
+}
+
+.checkout__coupon-label {
+  color: #000;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  opacity: 0.5;
+  position: absolute;
+  left: 24px;
+  top: calc(50% - 12px);
+}
+
+.checkout__button {
+  background: #db4444;
+  border-radius: 4px;
+  padding: 16px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout__button--primary {
+  background: #007BFF;
+}
+
+.checkout__button-text {
+  color: #fafafa;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.checkout__summary {
+  border-radius: 4px;
+  width: 470px;
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.checkout__title {
+  color: #000;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.checkout__line-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.checkout__line-item-label {
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.checkout__line-item-amount {
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.checkout__underline {
+  opacity: 0.4;
+  width: 422px;
+  position: absolute;
+  left: 24px;
+  top: 124px;
+  transform: translateY(-1px);
+}
+
+.checkout__underline--secondary {
+  top: 180px;
+}
+
+.checkout__button:hover {
+  background-color: #b43c3c;
+}
+
+.checkout__button--primary:hover {
+  background-color: #0056b3;
+}
+.check{
+    display: flex;
+    justify-content:space-between ;
+    margin-top: 16px;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+    margin-top: 16px;
 }
