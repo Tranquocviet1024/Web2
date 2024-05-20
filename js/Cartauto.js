@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
             total += subtotal;
         });
 
-        // Cập nhật tổng số trong phần tóm tắt giỏ hàng nếu cần
-        // document.querySelector('.cart-total').innerText = `$${total.toFixed(2)}`;
+        // Cập nhật tổng số 
+        document.querySelector('.cart-total').innerText = `$${total.toFixed(2)}`;
     }
 });
