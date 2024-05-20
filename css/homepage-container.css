@@ -82,10 +82,6 @@
     position: relative;
 }
 
-.set-item-classification{
-
-}
-
 .item-classification{
     width: 150px;
     height: 24px;
@@ -104,9 +100,7 @@
 
 }
 
-.see-more{
 
-}
 
 .vertical-line{
     width: 1px;
@@ -633,9 +627,10 @@
     }
 }
 
-.block-item:hover 
 
-.add-to-cart{
+
+.block-item:hover .add-to-cart{
+
     display: block;
     width: 100%;
     left: 0;
