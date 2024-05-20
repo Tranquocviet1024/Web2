@@ -1,0 +1,134 @@
+.billing-container{
+    width: 100%;
+    margin: 80px 135px 80px;
+}
+.roadmap {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    align-items: center;
+    position: relative;
+    justify-content: flex-start;
+}
+.roadmap__item{
+    color: #000000;
+    text-align: left;
+    line-height:1.3125rem;
+    font-weight: 400;
+    position: relative;
+    font-size: 14px;
+  }
+.roadmap__item.roadmap__item-home {
+    opacity: 0.5;
+  }
+.roadmap__line-1 {
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-width: 0.0625rem 0 0 0;
+    flex-shrink: 0;
+    width: 0.824375rem;
+    height: 0rem;
+    position: relative;
+    transform: rotate(117.051deg) scale(1, 1);
+}
+.billing-details {
+    color: var(--text2, #000000);
+    text-align: left;
+    font-size: 36px;
+    line-height: 30px;
+    margin-top: 80px;
+    letter-spacing: 0.04em;
+    font-weight:500;
+    position: relative;
+  }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  margin-top: 48px;
+  position: relative;
+}
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.form__label {
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  opacity: 0.4;
+  position: relative;
+}
+.form__label-text {
+  color: #000000;
+  font-size:16px;
+  line-height:  24px;
+  font-weight:  400;
+}
+.form__label-required {
+  color: #db4444;
+  font-size:  16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.form__input {
+  background:  #f5f5f5;
+  border-radius: 4px;
+  width: 470px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.form__label--checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.form__input--checkbox {
+  display: none;
+}
+
+.form__custom-checkbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.form__input--checkbox:checked + .form__custom-checkbox {
+  background-color: #ff0000;
+}
+
+.form__input--checkbox:checked + .form__custom-checkbox::after {
+  content: '✔';
+  color: white;
+  font-size: 18px;
+}
+
+.form__label-text--checkbox {
+  color: #000000;
+  font-size: 16px;
+  line-height:  24px;
+  font-weight:  400;
+  position: relative;
+}
