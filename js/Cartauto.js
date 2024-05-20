@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
             total += subtotal;
         });
 
-        // Cập nhật tổng số 
-        document.querySelector('.cart-total').innerText = `$${total.toFixed(2)}`;
+
     }
 });
