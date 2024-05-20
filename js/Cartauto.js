@@ -55,17 +55,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updateCartTotal() {
         const cartRows = document.querySelectorAll('#cart-table tbody tr');
-        let total = 0;
+        let subtotal = 0;
         cartRows.forEach(function(row) {
             const priceElement = row.querySelector('.item__describe-price__new');
             const quantityElement = row.querySelector('.quantity-input');
             const price = parseFloat(priceElement.innerText.replace('$', ''));
             const quantity = quantityElement.value;
-            const subtotal = price * quantity;
-            row.querySelector('td:nth-child(4)').innerText = `$${subtotal.toFixed(2)}`;
-            total += subtotal;
+            const rowSubtotal = price * quantity;
+            row.querySelector('td:nth-child(4)').innerText = `$${rowSubtotal.toFixed(2)}`;
+            subtotal += rowSubtotal;
         });
 
-
+        const total = subtotal; // Bạn có thể thêm các phép tính khác cho phí vận chuyển, thuế, v.v.
+        document.getElementById('cart-subtotal').innerText = `$${subtotal.toFixed(2)}`;
+        document.getElementById('cart-total').innerText = `$${total.toFixed(2)}`;
     }
 });
