@@ -41,7 +41,7 @@ body {
 .top-header {
     background: var(--button, #000000);
     height: 48px;
-    width: 100% ;
+    width: 100%;
     position: relative;
     top: 0;
     /* left: 0;
@@ -119,14 +119,13 @@ body {
 /* Navigation Bar */
 .header-nabar {
     position: relative;
+    width: 1170px;
     z-index: 0;
     top: 0px; 
-    width: 100%;  
     height: 48px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items:end;
-    /* padding: 0 40px 0 40px; */
     background-color: #FAFAFA;
     padding: 70px 0 20px 0;
 }
@@ -244,15 +243,17 @@ body {
 .header-line{
     border-style: solid;
     border-color: var(--button, #000000);
-    border-width: 0.03125rem 0 0 0;
-    opacity: 0.30000001192092896;
     width: 100%;
     height: 1px;
     position: relative;
     left: 0;
     right: 0;
     top: 0px;
-    z-index: 9;
+    background-color: #808080;
+
+    border: 0.5px;
+    opacity: 0.3px;
+    
 }
 
 .hover_color{

@@ -15,6 +15,43 @@
     
 }
 
+.footer__container__for-error-page{
+    width: 100%;
+    padding: 80px 0px 84px 0px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 838px;
+    flex-wrap: wrap;
+    
+}
+
+.footer__container__for-SignupCreateaccount{
+    width: 100%;
+    padding: 80px 0px 84px 0px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1121px;
+    flex-wrap: wrap;
+}
+
+.footer__container__for-contact{
+    width: 100%;
+    padding: 80px 0px 84px 0px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 920px;
+    flex-wrap: wrap;
+}
+
 .footer-item-container_inclu_5{
     /* width: 100%; */
     width: 1170px;
