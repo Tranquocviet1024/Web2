@@ -538,43 +538,45 @@
 .arrow__left{
     width: 46px;
     height: 46px;
-    
-    
-    
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;  
 }
 
 .arrow__right{
     width: 46px;
     height: 46px;
-    
-    
-    
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;  
 }
 
                     /*item  */
 
 .block-items__max-width{
-    /* width: 100%; */
     width: 1170px;
     height: 493px;
-    display: flex;
     position: relative;
-    /* overflow: hidden; */
     display: flex;
-    justify-content: center;
-    left: 0;
-   
+    /* justify-content: center; */
+    overflow: hidden;
 
 }              
 
 .block-items{
-    width: 1305px;
+    width: auto;
     height: 350px;
     gap: 30px;
-    left: 0;
     display: flex;
-    position: absolute;
-    overflow: hidden;
+    position: relative;
+    /* overflow: hidden; */
+    transition: transform 0.5s ease;
 }
 
 .block-item{
