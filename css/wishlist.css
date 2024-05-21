@@ -16,6 +16,20 @@
     flex-direction: column;
 }
 
+.wishlist-amount{
+    width: 16px;
+    height: 16px;
+    top: 0%;
+    right: 0;
+    background-color: #DB4444;
+    border-radius: 50%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FAFAFA;
+    position: absolute;
+}
+
 .frame-items{
     width: 1,170px;
     height: 438px;
