@@ -125,7 +125,6 @@
 
     position: absolute;
     /* display: none; */
-
 }
 
 
@@ -264,10 +263,8 @@
 
 .frame-container{
     width: 1170px;
-    /* width: 1170px; */
     height: 493px;
     top: 666px;
-    /* left: 182px; */
     gap: 40px;
 
     display: flex;
@@ -280,7 +277,6 @@
 
 .frame-heading{
     width: 1170px;
-    /* width: 1170px; */
     height: 149px;
     gap: 470px;
     display: flex;
@@ -559,25 +555,35 @@
 
 .block-items__max-width{
     /* width: 100%; */
-    width: 100%;
+    width: 1170px;
     height: 493px;
     display: flex;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     justify-content: center;
+    left: 0;
    
 
 }              
 
 .block-items{
-    width: 100%;
+    width: 1305px;
     height: 350px;
     gap: 30px;
-    
+    left: 0;
     display: flex;
+    position: absolute;
+    overflow: hidden;
+}
+
+.block-item{
+    width: 270px;
+    height: 350px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
     position: relative;
-    /* float: left; */
 }
 
 
@@ -779,18 +785,14 @@
 .temp{
     width: 1170px;
     display: flex;
-    /* gap: 50px; */
     overflow: hidden;
     position: relative;
-    /* left: 7.5%; */
     justify-content: space-between;
     flex-wrap: wrap;
-    /* padding: 0 4%; */
 }
 
 
 .classification-block__item{
-    /* width: 170px; */
     height: 145px;
     padding: 25px 56px 24px 55px;
     border-radius: 4px;
@@ -930,15 +932,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-}
-
-.block-item{
-    width: 270px;
-    height: 350px;
-    gap: 16px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
 }
 
 .block-item:hover{
