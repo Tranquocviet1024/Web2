@@ -528,14 +528,12 @@
     width: 100px;
     height: 46px;
     gap: 8px;
-    
     display: flex;
     position: absolute;
     right: 0;
-    
 }
 
-.arrow__left{
+.arrow__left, .arrow__left-clone, .arrow__right, .arrow__right-clone{
     width: 46px;
     height: 46px;
     border: none;
@@ -544,17 +542,13 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;  
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.arrow__right{
-    width: 46px;
-    height: 46px;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;  
+
+.arrow__left:active, .arrow__right:active, .arrow__left-clone:active, .arrow__right-clone:active {
+    border-color:10px solid #DB4444;
+    transform: scale(1.5);
 }
 
                     /*item  */
@@ -568,6 +562,30 @@
     overflow: hidden;
 
 }              
+
+.block-items__loop{
+    width: auto;
+    height: 350px;
+    gap: 30px;
+    display: flex;
+    position: relative;
+    /* overflow: hidden; */
+    transition: transform 0.5s ease;
+}
+
+.block-item__loop, .block-item__loop-clone{
+    width: 270px;
+    height: 350px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.block-item__loop-clone {
+    min-width: 270px; /* Adjust as necessary */
+    /* Other styling */
+}
 
 .block-items{
     width: auto;
@@ -803,10 +821,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 
 }
 
-.classification-block__item--active:hover{
+.classification-block__item--active.selected{
     background-color: #DB4444;
 }
 
@@ -1132,17 +1151,20 @@
     position: relative;
     justify-content: center;
     overflow: hidden;
+    flex-direction: column;
 }
 
 .block-items__ourproducts{
     width: 1170px;
-    height: 732px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-
+    height: 350px;
+    gap: 30px;
 }
 
+.block-items__ourproducts__clone{
+    width: 1170px;
+    height: 350px;
+    gap: 30px;
+}
 
 
 .btn-view-all-products__ourproducts{
@@ -1383,6 +1405,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: #000000;
 }
 
 .service-inf-item__icon{

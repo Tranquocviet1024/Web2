@@ -35,3 +35,248 @@ moe vit-->
                     <img src="../img/Icon-logout.png" alt="Logout Icon">
                     <div class="user-setting-form__title">Log out</div>
                 </a>
+
+
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+        const blockItems = document.querySelector('.block-items__loop');
+        const items = Array.from(document.querySelectorAll('.block-item__loop'));
+        const containerWidth = blockItems.offsetWidth;
+        const itemWidth = items[0].offsetWidth + 30; // 270px width + 30px gap
+        let currentPosition = 0;
+        const totalWidth = itemWidth * items.length; // Chiều rộng tổng cộng của tất cả các block item
+    
+        function moveToNextItem() {
+          currentPosition += itemWidth;
+          if (currentPosition > containerWidth) {
+            currentPosition = itemWidth; // Đặt lại vị trí ban đầu
+    
+            // Di chuyển các block item theo vòng tròn
+            const firstItem = items.shift();
+            items.push(firstItem);
+            blockItems.appendChild(firstItem);
+          }
+    
+          let currentIndex = 0;
+          // di chuyen block item den vi tri moi
+          items.forEach((item, index) => {
+            blockItems.appendChild(item);
+          });
+    
+          function moveToNextItem() {
+              currentIndex++;
+              if (currentIndex >= items.length) {
+                  currentIndex = 0; // quay lai muc dau tien
+              }
+              blockItems.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+          }
+          blockItems.style.transform = `translateX(-${currentPosition}px)`;
+        }
+    
+        setInterval(moveToNextItem, 2000);
+    
+        // Tạo khoảng trống để di chuyển vòng tròn
+        blockItems.style.width = `${totalWidth}px`;
+      });
+
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const blockItems = document.querySelector('.block-items__loop');
+        const items = Array.from(document.querySelectorAll('.block-item__loop'));
+        const itemWidth = items[0].offsetWidth + 30; // 270px width + 30px gap
+
+        // Duplicate items for seamless looping
+        items.forEach(item => {
+            const clone = item.cloneNode(true);
+            blockItems.appendChild(clone);
+        });
+
+        let currentPosition = 0;
+
+        function moveToNextItem() {
+            currentPosition += itemWidth;
+            blockItems.style.transition = 'transform 0.5s ease-in-out';
+            blockItems.style.transform = `translateX(-${currentPosition}px)`;
+
+            if (currentPosition >= itemWidth * items.length) {
+                setTimeout(() => {
+                    blockItems.style.transition = 'none';
+                    blockItems.style.transform = 'translateX(0)';
+                    currentPosition = 0;
+                }, 500); // Match the duration in transition
+            }
+        }
+
+        setInterval(moveToNextItem, 2000);
+    });
+
+
+
+    // chuyen ma khong co nut
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const blockItems = document.querySelector('.block-items__loop');
+        const items = Array.from(document.querySelectorAll('.block-item__loop'));
+        const itemWidth = items[0].offsetWidth + 30; // 270px width + 30px gap
+
+        items.forEach(item => {
+            const clone = item.cloneNode(true);
+            blockItems.appendChild(clone);
+        });
+
+        let currentPosition = 0;
+
+        function moveToNextItem() {
+            currentPosition += itemWidth;
+            blockItems.style.transition = 'transform 0.5s ease-in-out';
+            blockItems.style.transform = `translateX(-${currentPosition}px)`;
+
+            if (currentPosition >= itemWidth * items.length) {
+                setTimeout(() => {
+                    blockItems.style.transition = 'none';
+                    blockItems.style.transform = 'translateX(0)';
+                    currentPosition = 0;
+                }, 500); // Match the duration in transition
+            }
+        }
+
+        setInterval(moveToNextItem, 2000);
+    });
+
+
+
+    //chuyen co nut
+
+    document.addEventListener('DOMContentLoaded', () => {
+            const blockItems = document.querySelector('.block-items__loop');
+            const items = Array.from(document.querySelectorAll('.block-item__loop'));
+            const itemWidth = items[0].offsetWidth + 30; // 270px width + 30px gap
+            const arrowLeft = document.querySelector('.arrow__left');
+            const arrowRight = document.querySelector('.arrow__right');
+
+            // Duplicate items for seamless looping
+            items.forEach(item => {
+                const clone = item.cloneNode(true);
+                blockItems.appendChild(clone);
+            });
+
+            let currentPosition = 0;
+
+            function moveToNextItem() {
+                currentPosition += itemWidth;
+                blockItems.style.transition = 'transform 0.5s ease-in-out';
+                blockItems.style.transform = `translateX(-${currentPosition}px)`;
+
+                if (currentPosition >= itemWidth * items.length) {
+                    setTimeout(() => {
+                        blockItems.style.transition = 'none';
+                        blockItems.style.transform = 'translateX(0)';
+                        currentPosition = 0;
+                    }, 500); // Match the duration in transition
+                }
+            }
+
+            function moveToPreviousItem() {
+                if (currentPosition === 0) {
+                    currentPosition = itemWidth * items.length;
+                    blockItems.style.transition = 'none';
+                    blockItems.style.transform = `translateX(-${currentPosition}px)`;
+                }
+                
+                setTimeout(() => {
+                    currentPosition -= itemWidth;
+                    blockItems.style.transition = 'transform 0.5s ease-in-out';
+                    blockItems.style.transform = `translateX(-${currentPosition}px)`;
+                }, 20); // Small delay to ensure transition is applied
+            }
+
+            arrowRight.addEventListener('click', moveToNextItem);
+            arrowLeft.addEventListener('click', moveToPreviousItem);
+
+            setInterval(moveToNextItem, 2000);
+        });
+
+
+
+        //nhap
+
+            // document.addEventListener('DOMContentLoaded', () => {
+    //     const blockItems = document.querySelector('.block-items__loop');
+    //     const items = Array.from(document.querySelectorAll('.block-item__loop'));
+    //     const itemWidth = items[0].offsetWidth + 30; // 270px width + 30px gap
+
+    //     // Duplicate items for seamless looping
+    //     items.forEach(item => {
+    //         const clone = item.cloneNode(true);
+    //         blockItems.appendChild(clone);
+    //     });
+
+    //     let currentPosition = 0;
+
+    //     function moveToNextItem() {
+    //         currentPosition += itemWidth;
+    //         blockItems.style.transition = 'transform 0.5s ease-in-out';
+    //         blockItems.style.transform = `translateX(-${currentPosition}px)`;
+
+    //         if (currentPosition >= itemWidth * items.length) {
+    //             setTimeout(() => {
+    //                 blockItems.style.transition = 'none';
+    //                 blockItems.style.transform = 'translateX(0)';
+    //                 currentPosition = 0;
+    //             }, 500); // Match the duration in transition
+    //         }
+    //     }
+
+    //     setInterval(moveToNextItem, 2000);
+    // });
+
+    // document.addEventListener('DOMContentLoaded', () => {
+    //     const blockItems = document.querySelector('.block-items__loop');
+    //     const items = Array.from(document.querySelectorAll('.block-item__loop'));
+    //     const itemWidth = items[0].offsetWidth + 30; // 270px width + 30px gap
+    //     const arrowLeft = document.querySelector('.arrow__left');
+    //     const arrowRight = document.querySelector('.arrow__right');
+
+    //     // Duplicate items for seamless looping
+    //     items.forEach(item => {
+    //         const clone = item.cloneNode(true);
+    //         blockItems.appendChild(clone);
+    //     });
+
+    //     let currentPosition = 0;
+
+    //     function moveToNextItem() {
+    //         currentPosition += itemWidth;
+    //         blockItems.style.transition = 'transform 0.5s ease-in-out';
+    //         blockItems.style.transform = `translateX(-${currentPosition}px)`;
+
+    //         if (currentPosition >= itemWidth * items.length) {
+    //             setTimeout(() => {
+    //                 blockItems.style.transition = 'none';
+    //                 blockItems.style.transform = 'translateX(0)';
+    //                 currentPosition = 0;
+    //             }, 500); // Match the duration in transition
+    //         }
+    //     }
+
+    //     function moveToPreviousItem() {
+    //         if (currentPosition === 0) {
+    //             currentPosition = itemWidth * items.length;
+    //             blockItems.style.transition = 'none';
+    //             blockItems.style.transform = `translateX(-${currentPosition}px)`;
+    //         }
+            
+    //         setTimeout(() => {
+    //             currentPosition -= itemWidth;
+    //             blockItems.style.transition = 'transform 0.5s ease-in-out';
+    //             blockItems.style.transform = `translateX(-${currentPosition}px)`;
+    //         }, 20); // Small delay to ensure transition is applied
+    //     }
+
+    //     arrowRight.addEventListener('click', moveToNextItem);
+    //     arrowLeft.addEventListener('click', moveToPreviousItem);
+
+    //     setInterval(moveToNextItem, 2000);
+    // });
+</script>

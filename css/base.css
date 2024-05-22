@@ -258,3 +258,17 @@ body{
         background-color: #ae2525;
     }
 }
+
+@keyframes grow-icon {
+    from{
+        transform: scale(100%);
+    }
+    to{
+        transform: scale(110%);
+    }
+}
+
+.service-inf-item__icon:hover{
+    animation: grow-icon linear 0.2s forwards;
+    cursor: pointer;
+}
