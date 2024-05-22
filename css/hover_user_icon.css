@@ -1,48 +1,41 @@
-.user-container{
+.user-container {
     position: relative;
     z-index: 10;
     cursor: pointer;
 }
 
-.user-container::after{
+.user-container::after {
     position: absolute;
     content: "";
     width: 300%;
     height: 10px;
-    /* background-color:blue; */
     top: 100%;
     right: 0;
 }
 
-.user-setting-form{
+.user-setting-form {
     width: 224px;
     height: 208px;
     border-radius: 4px;
     position: absolute;
     top: 110%;
     right: 0;
-    background: linear-gradient(to top right, #9f70a6, #919091 );
-    display: flex;
+    background: linear-gradient(to top right, #9f70a6, #919091);
+    display: none;
     justify-content: center;
     align-items: center;
-    display: none;
 }
 
-.user-container:hover .user-setting-form{
-    display: flex;
-}
-
-.user-setting-form__frame{
+.user-setting-form__frame {
     width: 194px;
     height: 180px;
-    /* gap: 13px; */
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-.user-setting-form__icon-title{
+.user-setting-form__icon-title {
     display: flex;
     align-items: center;
     height: 32px;
@@ -53,17 +46,16 @@
     color: #DBDBDB;
 }
 
-.user-setting-form__icon{
+.user-setting-form__icon {
     width: 32px;
     height: 32px;
     padding: 5px 8px 5px 7px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
-.user-setting-form__title{
+.user-setting-form__title {
     font-family: 'Poppins';
     font-size: 14px;
     font-weight: 400;
