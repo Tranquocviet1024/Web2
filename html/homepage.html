@@ -62,17 +62,13 @@ zz
                 <div class="header-searh">
                     <div class="search-component-set">
                         <div class="header-searh__box">
-                            <!-- <div class="header-searh__text">What are you looking for?</div> -->
                             <input type="text" class="header-searh__input" placeholder="What are you looking for?">
                             <img class="header-searh__glass" src="../img/FindGlass.png" />
                         </div>
                     </div>
-
                     <div class="Header-nabar__icon">
                     <a href="../html/wishlist.html" ><img class="wishlist" src="../img/Wishlist.png" /></a>
-                        <!-- <div class="Cart-1-with-buy"> -->
                         <a href="../html/Cart.html"><img class="ShoppingCard" src="../img/Shoppingcard.png" /></a>
-                        <!-- </div> -->
                         <div class="user-container"><img class="user" src="../img/user.png" />
                             <div class="user-setting-form">
                                 <div class="user-setting-form__frame">
@@ -99,6 +95,7 @@ zz
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -406,10 +403,7 @@ zz
                                 </div>
                             </div>
                         </div>                    
-                        
 
-
-                        
                     </div>
                 </div>
             </div>
@@ -1440,30 +1434,51 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
 document.addEventListener('DOMContentLoaded', () => {
-    const blockItems = document.querySelector('.block-items');
-    const items = document.querySelectorAll('.block-item');
-    const itemWidth = items[0].offsetWidth + 30; // 270px width + 30px gap
+  const blockItems = document.querySelector('.block-items');
+  const items = Array.from(document.querySelectorAll('.block-item'));
+  const containerWidth = blockItems.offsetWidth;
+  const itemWidth = items[0].offsetWidth + 30; // 270px width + 30px gap
+  let currentPosition = 0;
+  const totalWidth = itemWidth * items.length; // Chiều rộng tổng cộng của tất cả các block item
 
-    let currentIndex = 0;
+  function moveToNextItem() {
+    currentPosition += itemWidth;
+    if (currentPosition > containerWidth) {
+      currentPosition = itemWidth; // Đặt lại vị trí ban đầu
 
-    function moveToNextItem() {
-        currentIndex++;
-        if (currentIndex >= items.length) {
-            currentIndex = 0; // Quay lại mục đầu tiên
-        }
-        blockItems.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+      // Di chuyển các block item theo vòng tròn
+      const firstItem = items.shift();
+      items.push(firstItem);
+      blockItems.appendChild(firstItem);
     }
 
-    setInterval(moveToNextItem, 1000); // Lướt qua mục tiếp theo mỗi 3 giây
+    // Di chuyển các block item theo vị trí mới
+    items.forEach((item, index) => {
+      blockItems.appendChild(item);
+    });
+
+    blockItems.style.transform = `translateX(-${currentPosition}px)`;
+  }
+
+  setInterval(moveToNextItem, 3000); // Lướt qua mục tiếp theo mỗi 3 giây
+
+  // Tạo khoảng trống để di chuyển vòng tròn
+  blockItems.style.width = `${totalWidth}px`;
 });
+<<<<<<< HEAD
+=======
+
+
+
+// click user-container
 
 
 
 
-
+>>>>>>> c242cf11dfa098f9f4ea7a32f3fedd654d0a1114
 </script>
 <script src="../js/Autotime.js"></script>
+<script src="../js/click-user.js"></script>
 </body>
 </html>
