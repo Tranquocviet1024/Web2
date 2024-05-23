@@ -17,6 +17,26 @@
     <div class="main">
         <!-- bắt đầu header -->
         <div class="ok">
+            <div id="toast">
+                <!-- <div class="toast">
+                    <div class="toast__icon"> -->
+                        <!-- <i class="fas fa-check-circle"></i>
+                        <img src="../img/Fire Fill.png" alt="">
+                        <img src="../img/Fire Fill (1).png" alt=""> -->
+
+                        <!-- <img src="../img/CheckBox=Off.png" alt="">
+                            
+                    </div>
+                    <div class="toast__body">
+                        <h3 class="toast__title">Success</h3>
+                        <p class="toast__message">Profile information has been saved.</p>
+                    </div>
+                    <div class="toast__close"> -->
+                        <!-- <i class="fa-solid fa-circle-xmark"></i> -->
+                        <!-- <img src="../img/icon-cancel (1).png" alt="">
+                    </div>
+                </div> -->
+            </div>
 
             <div class="top-header">
                 <div class="frame">
@@ -133,18 +153,18 @@
                         <div class="edit-profile__frame-child edit-profile__frame-child__first-name">
                             <div class="edit-profile__frame-child-heading">First Name</div>
                             <div class="edit-profile__frame-child-input__background">
-                                <input class="edit-profile__frame-child-input" type="text" placeholder="Md">
+                                <input id="first-name"class="edit-profile__frame-child-input" type="text" placeholder="Md">
                             </div>
-                        </div>
+                        </div> 
                         <div class="edit-profile__frame-child edit-profile__frame-child__last-name">
                             <div class="edit-profile__frame-child-heading">Last Name</div>
                             <div class="edit-profile__frame-child-input__background">
-                                <input class="edit-profile__frame-child-input" type="text" placeholder="Rimel">
+                                <input id="last-name" class="edit-profile__frame-child-input" type="text" placeholder="Rimel">
                             </div>
                         </div>
                     </div>
 
-                    <div class="edit-profile__frame edit-profile__frame__2">
+                    <!-- <div class="edit-profile__frame edit-profile__frame__2">
                         <div class="edit-profile__frame-child">
                             <div class="edit-profile__frame-child-heading">Email</div>
                             <div class="edit-profile__frame-child-input__background">
@@ -178,8 +198,45 @@
                     <div class="btn-frame">
                         <button class="btn-cancel btn-white-color--hover">Cancel</button>
                         <button class="btn-save-changes btn--hover">Save Changes</button>
+                    </div> -->
+                    <div class="edit-profile__frame edit-profile__frame__2">
+                        <div class="edit-profile__frame-child">
+                            <div class="edit-profile__frame-child-heading">Email</div>
+                            <div class="edit-profile__frame-child-input__background">
+                                <input id="email" class="edit-profile__frame-child-input" type="email" placeholder="rimel1111@gmail.com">
+                                <div id="email-error" class="input-error-message"></div>
+                            </div>
+                        </div>
+                        <div class="edit-profile__frame-child">
+                            <div class="edit-profile__frame-child-heading">Address</div>
+                            <div class="edit-profile__frame-child-input__background">
+                                <input id="address" class="edit-profile__frame-child-input" type="text" placeholder="Kingston, 5236, United State">
+                                <div id="address-error" class="input-error-message"></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                
+                    <div class="edit-profile__frame edit-profile__frame-password-changes">
+                        <div class="edit-profile__frame-child-heading edit-profile__frame-child-heading-password-changes">Password Changes</div>
+                        <div class="edit-profile__frame-child-input__background edit-profile__frame-child-input__background-password-changes">
+                            <input id="current-password" class="edit-profile__frame-child-input" type="password" placeholder="Current Password">
+                            <div id="current-password-error" class="input-error-message"></div>
+                        </div>
+                        <div class="edit-profile__frame-child-input__background edit-profile__frame-child-input__background-password-changes">
+                            <input id="new-password" class="edit-profile__frame-child-input" type="password" placeholder="New Password">
+                            <div id="new-password-error" class="input-error-message"></div>
+                        </div>
+                        <div class="edit-profile__frame-child-input__background edit-profile__frame-child-input__background-password-changes">
+                            <input id="confirm-new-password" class="edit-profile__frame-child-input" type="password" placeholder="Confirm New Password">
+                            <div id="confirm-new-password-error" class="input-error-message"></div>
+                        </div>
+                    </div>
+                
+                    <div class="btn-frame">
+                        <button class="btn-cancel btn-white-color--hover">Cancel</button>
+                        <button id="save-changes" class="btn-save-changes btn--hover">Save Changes</button>
+                    </div>
+                
                 <!-- </div> -->
             </div>
 
@@ -275,7 +332,11 @@
           </div>
     </div>
 
+
+
     <script src="../js/click-user.js"></script>
+    <script src="../js/add-to-cart.js"></script>
+    <script src="../js/save-inf__notification.js"></script>
 </body>
 </html>
 

@@ -279,3 +279,232 @@
     align-items: center;
 }
 
+.edit-profile__frame {
+    width: 710px;
+    height: 82px;
+    top: 84px;
+    left: 80px;
+    gap: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-profile__frame__2 {
+    top: 106px;
+}
+
+.edit-profile__frame-child {
+    width: 330px;
+    height: 82px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-profile__frame-child-heading {
+    width: 85px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.edit-profile__frame-child-input__background {
+    width: 330px;
+    height: 50px;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 4px;
+}
+
+.edit-profile__frame-child-input:focus {
+    border: 1px solid blue;
+    border-radius: 4px;
+}
+
+.edit-profile__frame-child-input {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    outline: none;
+    border: none;
+    background: #F5F5F5;
+    position: absolute;
+    padding-left: 16px;
+}
+
+.edit-profile__frame-password-changes {
+    width: 710px;
+    height: 214px;
+    top: 296px;
+    left: 80px;
+    gap: 16px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-profile__frame-child-heading-password-changes {
+    width: 154px;
+}
+
+.edit-profile__frame-child-input__background-password-changes {
+    width: 710px;
+}
+
+.btn-frame {
+    width: 303px;
+    height: 56px;
+    top: 534px;
+    left: 487px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-cancel {
+    width: 89px;
+    height: 56px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #000000;
+    border: none;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.btn-save-changes {
+    width: 214px;
+    height: 56px;
+    gap: 10px;
+    border-radius: 4px;
+    background: #DB4444;
+    border: none;
+    color: #FAFAFA;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.toast-container{
+    display: none;
+}
+
+#toast{
+    position:fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 20;
+}
+
+.toast{
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-left: 5px solid;
+    border-radius: 5px;
+    height: 70px;
+    box-shadow: 10px 10px 10px #999999;
+    position: relative;
+    
+}   
+
+@keyframes right-to-left{
+    from{
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-out{
+    to{
+        opacity: 0;
+    }
+}
+
+
+.toast + .toast{
+    margin-top: 30px;
+}
+
+.toast__icon, .toast__body, .toast__close{
+    margin: 10px;
+    /* position: absolute;
+    right: 0; */
+}
+
+.toast__body{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+.toast__title{
+    font-size: 20px;
+}
+
+.toast__message{
+    font-size: 15px;
+    color: #555555;
+    margin-top: 5px;
+}
+
+.toast__close{
+    color: #999999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.toast--success{
+    border-color: green;
+}
+
+.toast--success .toast__icon{
+    color: green;
+}
+
+.toast--error{
+    border-color: red;
+}
+
+.toast--error .toast__icon{
+    color: red;
+}
+
+.input-error-message {
+    color: red;
+    font-size: 14px;
+    display: none; /* Initially hide error messages */
+    margin-top: 5px;
+}

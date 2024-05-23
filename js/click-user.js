@@ -74,169 +74,92 @@ document.addEventListener('DOMContentLoaded', () => {
     //slideshow
 
     document.addEventListener('DOMContentLoaded', () => {
-        const blockItems = document.querySelector('.block-items__loop');
-        const items = Array.from(document.querySelectorAll('.block-item__loop'));
-        const itemWidth = items[0].offsetWidth + 30; // 270px width + 30px gap
-        const arrowLeft = document.querySelector('.arrow__left-clone');
-        const arrowRight = document.querySelector('.arrow__right-clone');
-    
-        // Duplicate items for seamless looping
-        items.forEach(item => {
-            const clone = item.cloneNode(true);
-            blockItems.appendChild(clone);
-        });
-    
-        let currentPosition = 0;
-        let autoSlideInterval;
-        let isTransitioning = false;
-    
-        function moveToNextItem() {
-            if (isTransitioning) return;
-            isTransitioning = true;
-    
-            currentPosition += itemWidth;
-            blockItems.style.transition = 'transform 0.5s ease-in-out';
-            blockItems.style.transform = `translateX(-${currentPosition}px)`;
-    
-            if (currentPosition >= itemWidth * items.length) {
-                setTimeout(() => {
-                    blockItems.style.transition = 'none';
-                    blockItems.style.transform = 'translateX(0)';
-                    currentPosition = 0;
-                    isTransitioning = false;
-                }, 500); // Match the duration in transition
-            } else {
-                setTimeout(() => {
-                    isTransitioning = false;
-                }, 500);
-            }
-        }
-    
-        function moveToPreviousItem() {
-            if (isTransitioning) return;
-            isTransitioning = true;
-    
-            if (currentPosition === 0) {
-                currentPosition = itemWidth * items.length;
-                blockItems.style.transition = 'none';
-                blockItems.style.transform = `translateX(-${currentPosition}px)`;
-            }
+
+        function createSlideshow(containerSelector, itemSelector, arrowLeftSelector, arrowRightSelector, autoSlideDuration = 2000, resetSlideDuration = 2000) {
+            const blockItems = document.querySelector(containerSelector);
+            const items = Array.from(document.querySelectorAll(itemSelector));
+            const itemWidth = items[0].offsetWidth + 30;
+            const arrowLeft = document.querySelector(arrowLeftSelector);
+            const arrowRight = document.querySelector(arrowRightSelector);
             
-            setTimeout(() => {
-                currentPosition -= itemWidth;
+            // Clone items for seamless looping
+            items.forEach(item => {
+                const clone = item.cloneNode(true);
+                blockItems.appendChild(clone);
+            });
+            
+            let currentPosition = 0;
+            let autoSlideInterval;
+            let isTransitioning = false;
+            
+            function moveToNextItem() {
+                if (isTransitioning) return;
+                isTransitioning = true;
+        
+                currentPosition += itemWidth;
                 blockItems.style.transition = 'transform 0.5s ease-in-out';
                 blockItems.style.transform = `translateX(-${currentPosition}px)`;
-                setTimeout(() => {
-                    isTransitioning = false;
-                }, 500); // Match the duration in transition
-            }, 20); // Small delay to ensure transition is applied
-        }
-    
-        function startAutoSlide() {
-            autoSlideInterval = setInterval(moveToNextItem, 2000);
-        }
-    
-        function stopAutoSlide() {
-            clearInterval(autoSlideInterval);
-            setTimeout(startAutoSlide, 3000); // Restart auto-slide after 5 seconds
-        }
-    
-        arrowRight.addEventListener('click', () => {
-            moveToNextItem();
-            stopAutoSlide();
-        });
-    
-        arrowLeft.addEventListener('click', () => {
-            moveToPreviousItem();
-            stopAutoSlide();
-        });
-    
-        startAutoSlide();
-    });
-
-    //slideshow 2
-    
-
-    document.addEventListener('DOMContentLoaded', () => {
-        const blockItems = document.querySelector('.block-items__ourproducts');
-        const items = Array.from(document.querySelectorAll('.block-item__loop-clone'));
-        const itemWidth = items[0].offsetWidth + 30; // Adjust for item width + gap
-        const arrowLeft = document.querySelector('.arrow__left-clone');
-        const arrowRight = document.querySelector('.arrow__right-clone');
         
-        // Clone items for seamless looping
-        items.forEach(item => {
-            const clone = item.cloneNode(true);
-            blockItems.appendChild(clone);
-        });
+                if (currentPosition >= itemWidth * items.length) {
+                    setTimeout(() => {
+                        blockItems.style.transition = 'none';
+                        blockItems.style.transform = 'translateX(0)';
+                        currentPosition = 0;
+                        isTransitioning = false;
+                    }, 500);
+                } else {
+                    setTimeout(() => {
+                        isTransitioning = false;
+                    }, 500);
+                }
+            }
         
-        let currentPosition = 0;
-        let autoSlideInterval;
-        let isTransitioning = false;
+            function moveToPreviousItem() {
+                if (isTransitioning) return;
+                isTransitioning = true;
         
-        function moveToNextItem() {
-            if (isTransitioning) return;
-            isTransitioning = true;
-    
-            currentPosition += itemWidth;
-            blockItems.style.transition = 'transform 0.5s ease-in-out';
-            blockItems.style.transform = `translateX(-${currentPosition}px)`;
-    
-            if (currentPosition >= itemWidth * items.length) {
-                setTimeout(() => {
+                if (currentPosition === 0) {
+                    currentPosition = itemWidth * items.length;
                     blockItems.style.transition = 'none';
-                    blockItems.style.transform = 'translateX(0)';
-                    currentPosition = 0;
-                    isTransitioning = false;
-                }, 500);
-            } else {
+                    blockItems.style.transform = `translateX(-${currentPosition}px)`;
+                }
+        
                 setTimeout(() => {
-                    isTransitioning = false;
-                }, 500);
+                    currentPosition -= itemWidth;
+                    blockItems.style.transition = 'transform 0.5s ease-in-out';
+                    blockItems.style.transform = `translateX(-${currentPosition}px)`;
+                    setTimeout(() => {
+                        isTransitioning = false;
+                    }, 500);
+                }, 20);
             }
-        }
-    
-        function moveToPreviousItem() {
-            if (isTransitioning) return;
-            isTransitioning = true;
-    
-            if (currentPosition === 0) {
-                currentPosition = itemWidth * items.length;
-                blockItems.style.transition = 'none';
-                blockItems.style.transform = `translateX(-${currentPosition}px)`;
+        
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(moveToNextItem, autoSlideDuration);
             }
-    
-            setTimeout(() => {
-                currentPosition -= itemWidth;
-                blockItems.style.transition = 'transform 0.5s ease-in-out';
-                blockItems.style.transform = `translateX(-${currentPosition}px)`;
-                setTimeout(() => {
-                    isTransitioning = false;
-                }, 500);
-            }, 20);
+        
+            function stopAutoSlide() {
+                clearInterval(autoSlideInterval);
+                setTimeout(startAutoSlide, resetSlideDuration);
+            }
+        
+            arrowRight.addEventListener('click', () => {
+                moveToNextItem();
+                stopAutoSlide();
+            });
+        
+            arrowLeft.addEventListener('click', () => {
+                moveToPreviousItem();
+                stopAutoSlide();
+            });
+        
+            startAutoSlide();
         }
     
-        function startAutoSlide() {
-            autoSlideInterval = setInterval(moveToNextItem, 2000);
-        }
+        // Create the first slideshow
+        createSlideshow('.block-items__loop', '.block-item__loop', '.arrow__left', '.arrow__right');
     
-        function stopAutoSlide() {
-            clearInterval(autoSlideInterval);
-            setTimeout(startAutoSlide, 3000);
-        }
-    
-        arrowRight.addEventListener('click', () => {
-            moveToNextItem();
-            stopAutoSlide();
-        });
-    
-        arrowLeft.addEventListener('click', () => {
-            moveToPreviousItem();
-            stopAutoSlide();
-        });
-    
-        startAutoSlide();
+        // Create the second slideshow
+        createSlideshow('.block-items__ourproducts', '.block-item__loop-clone', '.arrow__left-clone', '.arrow__right-clone');
     });
-    
-
     

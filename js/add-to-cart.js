@@ -29,3 +29,4 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Sản phẩm đã được thêm vào giỏ hàng');
     }
 });
+
