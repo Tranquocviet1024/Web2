@@ -429,6 +429,7 @@
     height: 70px;
     box-shadow: 10px 10px 10px #999999;
     position: relative;
+    /* font-family: 'Inter'; */
     
 }   
 
@@ -508,3 +509,4 @@
     display: none; /* Initially hide error messages */
     margin-top: 5px;
 }
+

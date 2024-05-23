@@ -13,10 +13,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/hover_user_icon.css">
+    <link rel="stylesheet" href="../css/account.css">
 </head>
 <body>
     <div class="main">
+        
         <div class="ok">
+            <div id="toast"></div>
+            <button id="back-to-top-btn" class="back-to-top-btn" onclick="scrollToTop()">Back to Top</button>
+
             <!-- bắt đầu header -->
             <div class="top-header">
                 <div class="frame">
@@ -26,7 +31,7 @@
                         </div>
                         <a href="#" class="shop-now">ShopNow</a>
                     </div>
-zz
+
                     <div class="frame-2">
                         <div class="english">English</div>
                         <img class="drop-down" src="../img/drop-down.png" />
@@ -67,7 +72,10 @@ zz
                         </div>
                     </div>
                     <div class="Header-nabar__icon">
-                        <a href="../html/wishlist.html" ><img class="wishlist" src="../img/Wishlist.png" /></a>
+                        <a href="../html/wishlist.html" class="wishlist">
+                            <img src="../img/Wishlist.png"/>
+                            <div id="wishlist-count" class="wishlist-amount">0</div>
+                        </a>
                         <a href="../html/Cart.html"><img class="ShoppingCard" src="../img/Shoppingcard.png" /></a>
                         <div class="user-container"><img class="user" src="../img/user.png" />
                             <div class="user-setting-form">
@@ -196,7 +204,11 @@ zz
                                         <div class="item__discount">-40%</div>
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'HAVIT HV-G92 Gamepad', '$120', '$160', '../img/g92-2-500x500 1.png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -239,7 +251,11 @@ zz
                                         <div class="item__discount">-35%</div>
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a  class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'AK-900 Wired Keyboard', '$960', '$1160', '../img/ak-900-01-500x500 1.png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -283,7 +299,11 @@ zz
                                         <div class="item__discount">-40%</div>
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'IPS LCD Gaming Monitor', '$370', '$400', '../img/Tv.png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -326,7 +346,11 @@ zz
                                         <div class="item__discount">-40%</div>
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'S-Series Comfort Chair', '$375', '$400', '../img/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -369,7 +393,11 @@ zz
                                         <div class="item__discount">-25%</div>
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'HAVIT HV-G92 Gamepad', '$120', '$160', '../img/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -497,7 +525,8 @@ zz
                                         <!-- <div class="item__discount">-40%</div> -->
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'The North Face x Gucci Coat', '$260', '$360', '../img/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png')"><img src="../img/heart.png" alt=""></button>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -540,7 +569,11 @@ zz
                                         <!-- <div class="item__discount">-40%</div> -->
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'Gucci duffle bag', '$960', '$1160', '../img/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -583,7 +616,10 @@ zz
                                         <!-- <div class="item__discount">-40%</div> -->
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'RGB liquid CPU Cooler', '$160', '$170', '../img/gammaxx-l240-argb-1-500x500 1.png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -625,7 +661,11 @@ zz
                                         <!-- <div class="item__discount">-40%</div> -->
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'HAVIT HV-G92 Gamepad', '$360', '', '../img/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -668,7 +708,11 @@ zz
                                         <div class="item__discount">-40%</div>
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'HAVIT HV-G92 Gamepad', '$120', '$160', '../img/g92-2-500x500 1.png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -710,7 +754,11 @@ zz
                                         <div class="item__discount">-40%</div>
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'HAVIT HV-G92 Gamepad', '$120', '$160', '../img/g92-2-500x500 1.png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -812,7 +860,10 @@ zz
                                         <!-- <div class="item__discount">-40%</div> -->
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'Breed Dry Dog Food', '$100', '', '../img/71RdoeXxtrL 1 (1).png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -856,7 +907,10 @@ zz
                                         <!-- <div class="item__discount">-40%</div> -->
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'CANON EOS DSLR Camera', '$360', '', '../img/eos-250d-03-500x500 1 (1).png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -899,7 +953,11 @@ zz
                                         <!-- <div class="item__discount">-40%</div> -->
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'ASUS FHD Gaming Laptop', '$700', '', '../img/ideapad-gaming-3i-01-500x500 1 (1).png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -942,7 +1000,11 @@ zz
                                         <!-- <div class="item__discount">-40%</div> -->
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'Gucci duffle bag', '$500', '', '../img/curology-j7pKVQrTUsM-unsplash 1.png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -990,7 +1052,11 @@ zz
                                         <!-- <div class="item__discount">-40%</div> -->
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'Kids Electric Car', '$960', 'New', '../img/New-Mercedes-Benz-Gtr-Licensed-Ride-on-Car-Kids-Electric-Toy-Car 1 (1).png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -1034,7 +1100,11 @@ zz
                                         <!-- <div class="item__discount">-40%</div> -->
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'Jr. Zoom Soccer Cleats', '$160', '', '../img/Copa_Sense 1 (1).png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -1077,7 +1147,11 @@ zz
                                         <!-- <div class="item__discount">-40%</div> -->
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'GP11 Shooter USB Gamepad', '$660', 'New', '../img/GP11_PRD3 1 (1).png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -1121,7 +1195,11 @@ zz
                                         <!-- <div class="item__discount">-40%</div> -->
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'Quilted Satin Jacket', '$660', '', '../img/698717_Z8A1X_3475_001_100_0000_Light-Reversible-quilted-satin-jacket 1 (1).png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -1164,7 +1242,11 @@ zz
                                         <div class="item__discount">-40%</div>
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'HAVIT HV-G92 Gamepad', '$120', '', '../img/g92-2-500x500 1.png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -1207,7 +1289,11 @@ zz
                                         <!-- <div class="item__discount">-40%</div> -->
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'Breed Dry Dog Food', '$100', '', '../img/71RdoeXxtrL 1 (1).png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -1251,7 +1337,11 @@ zz
                                         <!-- <div class="item__discount">-40%</div> -->
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'CANON EOS DSLR Camera', '$360', '', '../img/eos-250d-03-500x500 1 (1).png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -1294,7 +1384,11 @@ zz
                                         <!-- <div class="item__discount">-40%</div> -->
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'ASUS FHD Gaming Laptop', '$700', '', '../img/ideapad-gaming-3i-01-500x500 1 (1).png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -1337,7 +1431,11 @@ zz
                                         <!-- <div class="item__discount">-40%</div> -->
                                         <div class="item__favourite-seen">
                                             <div class="item__favourite">
-                                                <a class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></a>
+                                                <!-- <button class="item__favourite" href="../html/wishlist.html"><img src="../img/heart.png" alt=""></button> -->
+                                                <button class="item__favourite" onclick="addToWishlist(event, 'Gucci duffle bag', '$500', '', '../img/curology-j7pKVQrTUsM-unsplash 1.png')">
+                                                    <img src="../img/heart.png" alt="">
+                                                </button>
+                                                
                                             </div>
                                             <div class="item__seen">
                                                 <a class="item__seen" href="../html/Product.html"><img src="../img/eye.png" alt=""></a>
@@ -1581,6 +1679,10 @@ zz
     
 <script src="../js/add-to-cart.js"></script>
 <script src="../js/Autotime.js"></script>
-<script src="../js/click-user.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/click-user.js"></script>
+<script>
+
+</script>
 </body>
 </html>

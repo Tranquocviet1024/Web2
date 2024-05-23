@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     saveButton.addEventListener('click', () => {
         const now = Date.now();
-        const minTimeBetweenSaves = 5000; // Thời gian tối thiểu giữa các lần nhấn Save (ở đây là 5 giây)
+        const minTimeBetweenSaves = 4000; // Thời gian tối thiểu giữa các lần nhấn Save (ở đây là 5 giây)
 
         // Kiểm tra nếu đang trong quá trình lưu hoặc thời gian giữa các lần nhấn chưa đủ
         if (isSaving || (now - lastSaveTime < minTimeBetweenSaves)) {
-            alert('Please wait before saving again.');
+            alert('Thao tác chậm lại, vui lòng thử lại sau vài giây!');
             return;
         }
 
@@ -36,32 +36,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!isValidEmail(email)) {
             isValid = false;
-            showToast('Error', 'Please enter a valid Gmail address', 'error');
+            showToast('Error', 'Vui lòng nhập email hợp lệ', 'error');
         }
 
         if (address === '') {
             isValid = false;
-            showToast('Error', 'Address cannot be empty', 'error');
+            showToast('Error', 'Địa chỉ không được bỏ trống', 'error');
         }
 
         if (newPassword.length < 6) {
             isValid = false;
-            showToast('Error', 'Password must be at least 6 characters long', 'error');
+            showToast('Error', 'Mật khẩu phải chứa ít nhất 6 ký tự', 'error');
         }
 
         if (!/\d/.test(newPassword)) {
             isValid = false;
-            showToast('Error', 'Password must contain at least one digit', 'error');
+            showToast('Error', 'Mật khẩu phải chứa ít nhất 1 số', 'error');
         }
 
         if (!/[!@#$%^&*(),.?":{}|<>]/.test(newPassword)) {
             isValid = false;
-            showToast('Error', 'Password must contain at least one special character', 'error');
+            showToast('Error', 'Mật khẩu phải chứa ít nhất một ký tự đặc biệt', 'error');
         }
 
         if (newPassword !== confirmNewPassword) {
             isValid = false;
-            showToast('Error', 'New password and confirm password do not match', 'error');
+            showToast('Error', 'phần nhập lại mật khẩu mới không trùng khớp', 'error');
         }
 
         if (isValid) {
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 localStorage.setItem('password', newPassword);
             }
 
-            showToast('Success', 'Profile information has been saved successfully', 'success');
+            showToast('Success', 'Thông tin cá nhân đã được cập nhật', 'success');
         }
 
         // Đặt lại biến isSaving sau khi đã lưu xong

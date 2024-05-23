@@ -12,11 +12,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/hover_user_icon.css">
+    <link rel="stylesheet" href="../css/account.css">
 </head>
 <body>
     <div class="main">
         <!-- bắt đầu header -->
         <div class="ok">
+            <button id="back-to-top-btn" class="back-to-top-btn" onclick="scrollToTop()">Back to Top</button>
+
+            <div id="toast"></div>
 
             <div class="top-header">
                 <div class="frame">
@@ -65,7 +69,7 @@
                 <div class="Header-nabar__icon">
                     <a href="" class="wishlist">
                         <img src="../img/Wishlist.png"/>
-                        <span class="wishlist-amount">4</span>
+                        <span class="wishlist-amount" id="wishlist-count">0</span>
                     </a>
                     <!-- <div class="Cart-1-with-buy"> -->
                     <a href="../html/Cart.html"><img class="ShoppingCard" src="../img/Shoppingcard.png"/></a>
@@ -102,134 +106,23 @@
          
             <div class="header-line"></div>
               
-
-        
+            
         <!-- kết thúc header -->
         <div class="max-width">
             <div class="wishlist-frame">
                 <div class="frame-items">
                     <div class="frame-items__header">
-                        <div class="frame-items__header-topic">Wishlist (4)</div>
+                        <div class="frame-items__header-topic">Wishlist</div>
                         <div class="frame-items__header-btn btn-white-color--hover">Move All To Bag</div>
                     </div>
-                    <div class="frame-items__container">
-                        <div class="block-item">
-                            <div class="item-bg">
-                                <div class="item-bg__contain">
-                                    <div class="item-bg__contain-pic">
-                                        <img src="../img/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png" alt="ao">
-                                        <!-- <div class="item__discount">-40%</div> -->
-                                        <div class="item__favourite-seen">
-                                            <div class="item__seen">
-                                                <img src="../img/bin.png" alt="">
-                                            </div>
-                                        </div>
+                    <div class="frame-items__container" id="wishlist-container">
+                        <!-- Wishlist items will be dynamically added here -->
 
-                                        <div class="add-to-cart">
-                                            <img class="set-img-add-to-cart" src="../img/Cart1.png" alt="">
-                                            <span class="set-title-add-to-cart">Add To Cart</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item__describe">
-                                <div class="item__desbribe-name">Gucci duffle bag</div>
-                                <div class="item__describe-price">
-                                    <div class="item__describe-price__new">$960</div>
-                                    <div class="item__describe-price__old">$1160</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="block-item">
-                            <div class="item-bg">
-                                <div class="item-bg__contain">
-                                    <div class="item-bg__contain-pic">
-                                        <img src="../img/gammaxx-l240-argb-1-500x500 1.png" alt="ao">
-                                        <!-- <div class="item__discount">-40%</div> -->
-                                        <div class="item__favourite-seen">
-                                            <div class="item__seen">
-                                                <img src="../img/bin.png" alt="">
-                                            </div>
-                                        </div>
-
-                                        <div class="add-to-cart">
-                                            <img class="set-img-add-to-cart" src="../img/Cart1.png" alt="">
-                                            <span class="set-title-add-to-cart">Add To Cart</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item__describe">
-                                <div class="item__desbribe-name">RGB liquid CPU Cooler</div>
-                                <div class="item__describe-price">
-                                    <div class="item__describe-price__new">$1960</div>
-                                    <!-- <div class="item__describe-price__old">$360</div> -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="block-item">
-                            <div class="item-bg">
-                                <div class="item-bg__contain">
-                                    <div class="item-bg__contain-pic">
-                                        <img src="../img/GP11_PRD3 1 (1).png" alt="ao">
-                                        <!-- <div class="item__discount">-40%</div> -->
-                                        <div class="item__favourite-seen">
-                                            <div class="item__seen">
-                                                <img src="../img/bin.png" alt="">
-                                            </div>
-                                        </div>
-
-                                        <div class="add-to-cart">
-                                            <img class="set-img-add-to-cart" src="../img/Cart1.png" alt="">
-                                            <span class="set-title-add-to-cart">Add To Cart</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item__describe">
-                                <div class="item__desbribe-name">GP11 Shooter USB Gamepad</div>
-                                <div class="item__describe-price">
-                                    <div class="item__describe-price__new">$550</div>
-                                    <!-- <div class="item__describe-price__old">$360</div> -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="block-item">
-                            <div class="item-bg">
-                                <div class="item-bg__contain">
-                                    <div class="item-bg__contain-pic">
-                                        <img src="../img/698717_Z8A1X_3475_001_100_0000_Light-Reversible-quilted-satin-jacket 1 (1).png" alt="ao">
-                                        <!-- <div class="item__discount">-40%</div> -->
-                                        <div class="item__favourite-seen">
-                                            <div class="item__seen">
-                                                <img src="../img/bin.png" alt="">
-                                            </div>
-                                        </div>
-
-                                        <div class="add-to-cart">
-                                            <img class="set-img-add-to-cart" src="../img/Cart1.png" alt="">
-                                            <span class="set-title-add-to-cart">Add To Cart</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item__describe">
-                                <div class="item__desbribe-name">Quilted Satin Jacket</div>
-                                <div class="item__describe-price">
-                                    <div class="item__describe-price__new">$750</div>
-                                    <!-- <div class="item__describe-price__old">$360</div> -->
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
+
+
                 <div class="frame-items">
                     <div class="frame-items__header">
                         <div class="frame-items__header-topic">
@@ -243,7 +136,7 @@
                     <div class="frame-items__container">
 
 
-                    <div class="block-item">
+                    <div class="block-item__jfu">
                         <div class="item-bg">
                             <div class="item-bg__contain">
                                 <div class="item-bg__contain-pic">
@@ -284,7 +177,7 @@
                         </div>
                     </div>
                     
-                    <div class="block-item">
+                    <div class="block-item__jfu">
                         <div class="item-bg">
                             <div class="item-bg__contain">
                                 <div class="item-bg__contain-pic">
@@ -325,7 +218,7 @@
                         </div>
                     </div>
                     
-                    <div class="block-item">
+                    <div class="block-item__jfu">
                         <div class="item-bg">
                             <div class="item-bg__contain">
                                 <div class="item-bg__contain-pic">
@@ -366,7 +259,7 @@
                         </div>
                     </div>
                     
-                    <div class="block-item">
+                    <div class="block-item__jfu">
                         <div class="item-bg">
                             <div class="item-bg__contain">
                                 <div class="item-bg__contain-pic">
@@ -505,7 +398,11 @@
           </div>
     </div>
     <script src="../js/click-user.js"></script>
+    <script src="../js/base.js"></script>
     <script src="../js/add-to-cart.js"></script>
+    <script>
+       
+    </script>
 
 </body>
 </html>

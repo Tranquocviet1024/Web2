@@ -558,7 +558,6 @@
     height: 493px;
     position: relative;
     display: flex;
-    /* justify-content: center; */
     overflow: hidden;
 
 }              
@@ -583,8 +582,7 @@
 }
 
 .block-item__loop-clone {
-    min-width: 270px; /* Adjust as necessary */
-    /* Other styling */
+    min-width: 270px; 
 }
 
 .block-items{
@@ -620,15 +618,37 @@
     }
 }
 
-.block-item:hover 
-
 .add-to-cart{
+    user-select: none;
+}
+
+.block-item:hover .add-to-cart{
     display: block;
     width: 100%;
     left: 0;
     line-height: 250%;
     animation: appearance ease 0.5s forwards; 
 }
+
+.block-item__loop:hover .add-to-cart{
+    display: block;
+    width: 100%;
+    left: 0;
+    line-height: 250%;
+    animation: appearance ease 0.5s forwards; 
+}
+
+.block-item__loop-clone:hover 
+.add-to-cart{
+    display: block;
+    width: 100%;
+    left: 0;
+    line-height: 250%;
+    animation: appearance ease 0.5s forwards; 
+    
+}
+
+
 
 @keyframes appearance {
     from{
