@@ -1,11 +1,10 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const backToTopBtn = document.getElementById('back-to-top-btn');
 
     // Thêm sự kiện scroll để hiển thị hoặc ẩn nút back-to-top
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) { // Kéo xuống hơn 300px thì hiển thị nút
-            backToTopBtn.style.display = 'block';
+            backToTopBtn.style.display = 'flex';
         } else {
             backToTopBtn.style.display = 'none';
         }

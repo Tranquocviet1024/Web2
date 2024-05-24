@@ -286,24 +286,99 @@ body{
     align-items: center;
     color: #FAFAFA;
     position: absolute;
-}
 
-.back-to-top-btn {
+}.back-to-top-btn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 50px;
+    right: 50px;
     display: none; /* Ẩn nút ban đầu */
+    width: 50px;
+    height: 50px;
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
     z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none; /* Ẩn nút ban đầu */
+
+  }
+
+  .back-to-top-btn:active {
+    background-color: #0056b3;
+    animation: grow-icon 0.1s linear forwards;
+  }
+
+
+  .orbit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
-.back-to-top-btn:hover {
-    background-color: #0056b3;
+.orbit div {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%; 
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.3); 
+}
+
+.orbit div:nth-child(1) {
+    top: 40%;
+    left: 40%;
+    animation-delay: 0s;
+    animation: orbit-head 2s linear infinite;
+
+}
+
+.orbit div:nth-child(2) {
+    top: 40%; /* Đặt top 60% để hình tròn nhỏ 2 xuất hiện ở phía dưới */
+    left: 40%;
+    animation-delay: 0s;
+    animation: orbit-mid 2s linear infinite;
+
+}
+
+.orbit div:nth-child(3) {
+    top: 40%; /* Đặt top 60% để hình tròn nhỏ 2 xuất hiện ở phía dưới */
+    left: 40%;
+    animation-delay: 0s;
+    animation: orbit-foot 2s linear infinite;
+
+}
+
+@keyframes orbit-head {
+    0% {
+        transform: rotate(0deg) translateX(30px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(30px) rotate(360deg);
+    }
+}
+
+@keyframes orbit-mid {
+    0% {
+        transform: rotate(120deg) translateX(30px) rotate(120deg);
+    }
+    100% {
+        transform: rotate(480deg) translateX(30px) rotate(480deg);
+    }
+}
+
+@keyframes orbit-foot {
+    0% {
+        transform: rotate(240deg) translateX(30px) rotate(240deg);
+    }
+    100% {
+        transform: rotate(600deg) translateX(30px) rotate(600deg);
+    }
 }
 
 .hidden {
