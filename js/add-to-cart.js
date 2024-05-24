@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="item-bg">
                     <div class="item-bg__contain">
                         <div class="item-bg__contain-pic">
-                            <img src="${item.imgSrc}" alt="${item.name}">
+                            <img src="${item.imgSrc}" alt="${item.itemName}">
                             <div class="item__favourite-seen">
                                 <div class="item__seen">
                                     <img src="../img/bin.png" class="delete-item-btn" alt="" data-index="${index}">
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
                 <div class="item__describe">
-                    <div class="item__desbribe-name">${item.name}</div>
+                    <div class="item__desbribe-name">${item.itemName}</div>
                     <div class="item__describe-price">
                         <div class="item__describe-price__new">${item.newPrice}</div>
                         <div class="item__describe-price__old">${item.oldPrice}</div>
@@ -126,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
         attachAddToCartEventHandlers();
         updateWishlistCount(); // Cập nhật số lượng wishlist sau khi render
     };
+    
 
     const attachDeleteEventHandlers = () => {
         const deleteButtons = document.querySelectorAll('.delete-item-btn');
@@ -245,6 +246,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function addToWishlist(event, itemName, newPrice, oldPrice, imgSrc) {
     event.preventDefault();
+    
+    console.log('Item Name:', itemName); // Kiểm tra giá trị của itemName
+    console.log('New Price:', newPrice); // Kiểm tra giá trị của newPrice
+    console.log('Old Price:', oldPrice); // Kiểm tra giá trị của oldPrice
+    console.log('Image Source:', imgSrc); // Kiểm tra giá trị của imgSrc
 
     // Logic để thêm sản phẩm vào wishlist (ví dụ đơn giản dùng localStorage)
     const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
@@ -262,6 +268,7 @@ function addToWishlist(event, itemName, newPrice, oldPrice, imgSrc) {
 
     updateWishlistCount(); // Cập nhật lại số lượng và ẩn hiện phần tử wishlist
 }
+
 
 // Function to initialize the wishlist count on page load
 function initializeWishlistCount() {
