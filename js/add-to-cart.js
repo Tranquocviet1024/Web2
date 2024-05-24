@@ -86,7 +86,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const wishlistContainer = document.getElementById('wishlist-container');
     let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
@@ -232,6 +231,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateWishlistCount = () => {
         const wishlistCountElement = document.getElementById('wishlist-count');
         wishlistCountElement.textContent = wishlist.length;
+
+        const wishlistContainer = document.getElementById('wishlist-container');
+        if (wishlist.length === 0) {
+            wishlistContainer.classList.add('hidden');
+        } else {
+            wishlistContainer.classList.remove('hidden');
+        }
     };
 
     renderWishlist();
@@ -253,6 +259,8 @@ function addToWishlist(event, itemName, newPrice, oldPrice, imgSrc) {
     let count = parseInt(wishlistCountElement.textContent);
     count += 1;
     wishlistCountElement.textContent = count;
+
+    updateWishlistCount(); // Cập nhật lại số lượng và ẩn hiện phần tử wishlist
 }
 
 // Function to initialize the wishlist count on page load
@@ -260,6 +268,13 @@ function initializeWishlistCount() {
     const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
     const wishlistCountElement = document.getElementById('wishlist-count');
     wishlistCountElement.textContent = wishlist.length;
+
+    const wishlistContainer = document.getElementById('wishlist-container');
+    if (wishlist.length === 0) {
+        wishlistContainer.classList.add('hidden');
+    } else {
+        wishlistContainer.classList.remove('hidden');
+    }
 }
 
 // Initialize wishlist count when page loads
