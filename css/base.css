@@ -353,6 +353,20 @@ body{
     animation: orbit-foot 2s linear infinite;
 
 }
+.orbit div:nth-child(4) {
+    top: 40%; /* Đặt top 60% để hình tròn nhỏ 2 xuất hiện ở phía dưới */
+    left: 40%;
+    animation-delay: 0s;
+    animation: orbit-four 2s linear infinite;
+
+}
+.orbit div:nth-child(5) {
+    top: 40%; /* Đặt top 60% để hình tròn nhỏ 2 xuất hiện ở phía dưới */
+    left: 40%;
+    animation-delay: 0s;
+    animation: orbit-five 2s linear infinite;
+
+}
 
 @keyframes orbit-head {
     0% {
@@ -365,21 +379,41 @@ body{
 
 @keyframes orbit-mid {
     0% {
-        transform: rotate(120deg) translateX(30px) rotate(120deg);
+        transform: rotate(72deg) translateX(30px) rotate(72deg);
     }
     100% {
-        transform: rotate(480deg) translateX(30px) rotate(480deg);
+        transform: rotate(432deg) translateX(30px) rotate(432deg);
     }
 }
 
 @keyframes orbit-foot {
     0% {
-        transform: rotate(240deg) translateX(30px) rotate(240deg);
+        transform: rotate(144deg) translateX(30px) rotate(144deg);
     }
     100% {
-        transform: rotate(600deg) translateX(30px) rotate(600deg);
+        transform: rotate(504deg) translateX(30px) rotate(504deg);
     }
 }
+
+@keyframes orbit-four {
+    0% {
+        transform: rotate(216deg) translateX(30px) rotate(216deg);
+    }
+    100% {
+        transform: rotate(576deg) translateX(30px) rotate(576deg);
+    }
+}
+
+
+@keyframes orbit-five {
+    0% {
+        transform: rotate(288deg) translateX(30px) rotate(288deg);
+    }
+    100% {
+        transform: rotate(648deg) translateX(30px) rotate(648deg);
+    }
+}
+
 
 .hidden {
     display: none;
