@@ -287,9 +287,11 @@ body{
     color: #FAFAFA;
     position: absolute;
 
-}.back-to-top-btn {
+}
+
+.back-to-top-btn {
     position: fixed;
-    bottom: 50px;
+    top: 70%;
     right: 50px;
     display: none; /* Ẩn nút ban đầu */
     width: 50px;
