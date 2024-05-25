@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const userContainer = document.querySelector('.user-container');
     const userSettingForm = document.querySelector('.user-setting-form');
-    const backButton = document.getElementById('backButton');
+    // const backButton = document.getElementById('backButton');
     const back_homepage = document.getElementById('back_homepage');
 
     userContainer.addEventListener('click', (event) => {

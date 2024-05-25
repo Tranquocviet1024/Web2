@@ -563,13 +563,14 @@
 }              
 
 .block-items__loop{
-    width: auto;
+    width: 1350px;
     height: 350px;
     gap: 30px;
     display: flex;
     position: relative;
     /* overflow: hidden; */
     transition: transform 0.5s ease;
+    left: 0;
 }
 
 .block-item__loop, .block-item__loop-clone{

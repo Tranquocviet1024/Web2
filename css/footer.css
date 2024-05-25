@@ -560,3 +560,65 @@
     color: #3d3d3d;
     
 }
+
+
+/* Responsive Design */
+@media only screen and (max-width: 815px) {
+    .main{
+        width: max-content;
+    }
+
+    .footer__container{
+        top: 5462px; 
+    }
+    
+    .footer__container__for-error-page{
+        top: 838px;
+    }
+    
+    .footer__container__for-account-page{
+        top: 1093px;
+    }
+    
+    .footer__container__for-SignupCreateaccount{
+        top: 1121px;
+    }
+    
+    .footer__container__for-contact{
+        top: 920px;
+    }
+    
+    .footer__container__for-wishlist{
+        top: 1346px;
+        
+    }
+}
+@media only screen and (min-width: 816px) and (max-width:1179px) {
+    .main {
+        width: max-content; 
+    }
+
+    .footer__container{
+        top: 5462px; 
+    }
+    
+    .footer__container__for-error-page{
+        top: 838px;
+    }
+    
+    .footer__container__for-account-page{
+        top: 1093px;
+    }
+    
+    .footer__container__for-SignupCreateaccount{
+        top: 1121px;
+    }
+    
+    .footer__container__for-contact{
+        top: 920px;
+    }
+    
+    .footer__container__for-wishlist{
+        top: 1346px;
+    }
+}
