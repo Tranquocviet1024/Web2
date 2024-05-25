@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return emailPattern.test(value) || phonePattern.test(value);
     }
 
-    // Kiểm tra hợp lệ của Mật Khẩu (thêm tiêu chí của bạn)
+    // Kiểm tra hợp lệ của Mật Khẩu 
     function validatePassword(password) {
         return password.length >= 6;
     }
